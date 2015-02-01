@@ -28,4 +28,7 @@
         <item quantity="one">%d device connected</item> 
         <item quantity="other">%d devices connected</item>
     </plurals>
+
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB tethering</string>
 </resources>
