@@ -23,6 +23,9 @@
     <string name="quick_settings_aod_label">AOD</string>
     <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
 
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB tethering</string>
+
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="one">%d device connected</item>
