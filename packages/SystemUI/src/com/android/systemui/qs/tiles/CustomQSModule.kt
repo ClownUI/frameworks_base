@@ -26,6 +26,12 @@ import dagger.multibindings.StringKey
 @Module
 interface CustomQSModule {
 
+    /** Inject CaffeineTile into tileMap in QSModule */
+    @Binds
+    @IntoMap
+    @StringKey(CaffeineTile.TILE_SPEC)
+    fun bindCaffeineTile(caffeineTile: CaffeineTile): QSTileImpl<*>
+
     /** Inject CellularTile into tileMap in QSModule */
     @Binds
     @IntoMap
