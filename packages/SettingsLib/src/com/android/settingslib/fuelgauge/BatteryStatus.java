@@ -26,6 +26,7 @@ import static android.os.BatteryManager.EXTRA_MAX_CHARGING_VOLTAGE;
 import static android.os.BatteryManager.EXTRA_PLUGGED;
 import static android.os.BatteryManager.EXTRA_PRESENT;
 import static android.os.BatteryManager.EXTRA_STATUS;
+import static android.os.BatteryManager.EXTRA_OEM_FAST_CHARGER;
 import static android.os.OsProtoEnums.BATTERY_PLUGGED_NONE;
 
 import android.content.Context;
@@ -66,14 +67,17 @@ public class BatteryStatus {
                 ? null : new BatteryStatus(batteryChangedIntent, incompatibleCharger);
     }
 
+    public final boolean oemFastChargeStatus;
+
     public BatteryStatus(int status, int level, int plugged, int chargingStatus,
-            int maxChargingWattage, boolean present) {
+            int maxChargingWattage, boolean present, boolean oemFastChargeStatus) {
         this.status = status;
         this.level = level;
         this.plugged = plugged;
         this.chargingStatus = chargingStatus;
         this.maxChargingWattage = maxChargingWattage;
         this.present = present;
+        this.oemFastChargeStatus = oemFastChargeStatus;
         this.incompatibleCharger = Optional.empty();
     }
 
@@ -96,6 +100,7 @@ public class BatteryStatus {
         this.incompatibleCharger = incompatibleCharger;
 
         maxChargingWattage = calculateMaxChargingMicroWatt(batteryChangedIntent);
+        oemFastChargeStatus = batteryChangedIntent.getBooleanExtra(EXTRA_OEM_FAST_CHARGER, false);
     }
 
     /** Determine whether the device is plugged. */
@@ -142,6 +147,9 @@ public class BatteryStatus {
 
     /** Return current charging speed is fast, slow or normal. */
     public final int getChargingSpeed(Context context) {
+        if (oemFastChargeStatus) {
+            return CHARGING_FAST;
+        }
         final int slowThreshold = context.getResources().getInteger(
                 R.integer.config_chargingSlowlyThreshold);
         final int fastThreshold = context.getResources().getInteger(
