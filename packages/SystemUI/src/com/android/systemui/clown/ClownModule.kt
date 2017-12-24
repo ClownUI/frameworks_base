@@ -18,6 +18,7 @@ package com.android.systemui.clown
 
 import com.android.systemui.qs.tileimpl.QSTileImpl
 import com.android.systemui.qs.tiles.FPSInfoTile
+import com.android.systemui.qs.tiles.CPUInfoTile
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -30,4 +31,10 @@ interface ClownModule {
     @IntoMap
     @StringKey(FPSInfoTile.TILE_SPEC)
     fun bindFPSInfoTile(fpsInfoTile: FPSInfoTile): QSTileImpl<*>
+
+    /** Inject CPUInfoTile into tileMap in QSModule */
+    @Binds
+    @IntoMap
+    @StringKey(CPUInfoTile.TILE_SPEC)
+    fun bindCPUInfoTile(cpuInfoTile: CPUInfoTile): QSTileImpl<*>
 }
