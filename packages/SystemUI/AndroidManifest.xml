@@ -1063,5 +1063,9 @@
             <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer"
                 tools:node="remove" />
         </provider>
+        
+        <!-- FPS Info -->
+        <service android:name=".FPSInfoService"
+                android:exported="false" />
     </application>
 </manifest>
