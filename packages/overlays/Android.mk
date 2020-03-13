@@ -86,14 +86,18 @@ LOCAL_REQUIRED_MODULES := \
     IconPackGradiconSystemUIOverlay \
     IconPackLornAndroidOverlay \
     IconPackLornSystemUIOverlay \
+    IconShapeCloudyOverlay \
     IconShapeCylinderOverlay \
+    IconShapeFlowerOverlay \
     IconShapeHeartOverlay \
     IconShapeHexagonOverlay \
     IconShapeLeafOverlay \
     IconShapePebbleOverlay \
+    IconShapeRoundedHexagonOverlay \
     IconShapeRoundedRectOverlay \
     IconShapeSquareOverlay \
     IconShapeSquircleOverlay \
+    IconShapeStretchedOverlay \
     IconShapeTaperedRectOverlay \
     IconShapeTeardropOverlay \
     IconShapeVesselOverlay \
