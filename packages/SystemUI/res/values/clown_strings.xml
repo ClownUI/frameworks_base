@@ -26,6 +26,12 @@
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">USB tethering</string>
 
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Wireless PowerShare</string>
+    <string name="quick_settings_powershare_off_powersave_label">Wireless PowerShare off\nBattery saver</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Wireless PowerShare off\nBattery too low</string>
+    <string name="quick_settings_powershare_enabled_label">Wireless PowerShare is enabled</string>
+
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="one">%d device connected</item>
