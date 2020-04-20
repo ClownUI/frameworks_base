@@ -25,6 +25,7 @@ import com.android.systemui.qs.tiles.WifiTile
 import com.android.systemui.qs.tiles.HeadsUpTile
 import com.android.systemui.qs.tiles.AODTile
 import com.android.systemui.qs.tiles.UsbTetherTile
+import com.android.systemui.qs.tiles.PowerShareTile
 
 import dagger.Binds
 import dagger.Module
@@ -80,4 +81,10 @@ interface CustomModule {
     @IntoMap
     @StringKey(AutoBrightnessTile.TILE_SPEC)
     fun bindAutoBrightnessTile(autobrightnessTile: AutoBrightnessTile): QSTileImpl<*>
+
+    /** Inject PowerShareTile into tileMap in QSModule */
+    @Binds
+    @IntoMap
+    @StringKey(PowerShareTile.TILE_SPEC)
+    fun bindPowerShareTile(powerShareTile: PowerShareTile): QSTileImpl<*>
 }
