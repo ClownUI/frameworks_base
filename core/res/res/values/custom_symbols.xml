@@ -124,4 +124,7 @@
     <java-symbol type="id" name="pocket_hint_image" />
     <java-symbol type="id" name="pocket_hint_message" />
 
+    <!-- Pocket Service -->
+    <java-symbol type="string" name="config_pocketJudgeVendorSensorName" />
+
 </resources>
