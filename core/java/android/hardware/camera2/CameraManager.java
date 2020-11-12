@@ -2301,7 +2301,6 @@ public final class CameraManager {
             List<String> cameraIds = new ArrayList<>();
             boolean exposeAuxCamera = Camera.shouldExposeAuxCamera();
             int size = exposeAuxCamera ? mDeviceStatus.size() : 2;
-            int idCount = 0;
             for (int i = 0; i < size; i++) {
                 int status = mDeviceStatus.valueAt(i);
                 DeviceCameraInfo info = mDeviceStatus.keyAt(i);
