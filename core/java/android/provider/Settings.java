@@ -5591,6 +5591,13 @@ public final class Settings {
         public static final String ADVANCED_REBOOT = "advanced_reboot";
 
         /**
+         * Whether to show media album art on keyguard
+         * @hide
+         */
+        @Readable
+        public static final String KEYGAURD_MEDIA_ART = "keygaurd_media_art";
+
+        /**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
@@ -5616,6 +5623,12 @@ public final class Settings {
          */
         public static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL =
                 "lockscreen_quick_unlock_control";
+
+        /**
+         * media artwork wallpaper blur level on lockscreen
+         * @hide
+         */
+        public static final String LOCKSCREEN_MEDIA_BLUR = "lockscreen_media_blur";
 
         /**
          * Keys we no longer back up under the current schema, but want to continue to
