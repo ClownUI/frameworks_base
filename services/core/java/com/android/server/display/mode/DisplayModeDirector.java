@@ -996,14 +996,14 @@ public class DisplayModeDirector {
             boolean shouldSwitchRefreshRate = Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.LOW_POWER_REFRESH_RATE, 1 /*default*/) != 0;
             final Vote vote;
-            if (inLowPowerMode && mVsynLowPowerVoteEnabled && shouldSwitchRefreshRate) {
+            if (inLowPowerMode && mVsynLowPowerVoteEnabled) {
                 vote = Vote.forSupportedModes(List.of(
                         new SupportedModesVote.SupportedMode(/* peakRefreshRate= */ 60f,
                                 /* vsyncRate= */ 240f),
                         new SupportedModesVote.SupportedMode(/* peakRefreshRate= */ 60f,
                                 /* vsyncRate= */ 60f)
                 ));
-            } else if (inLowPowerMode) {
+            } else if (inLowPowerMode && shouldSwitchRefreshRate) {
                 vote = Vote.forRenderFrameRates(0f, 60f);
             } else {
                 vote = null;
