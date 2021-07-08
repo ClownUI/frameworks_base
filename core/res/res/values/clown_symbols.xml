@@ -39,4 +39,7 @@
     <java-symbol type="string" name="reboot_title" />
     <java-symbol type="string" name="reboot_message" />
 
+    <!-- For dynamic default font styles -->
+    <java-symbol type="string" name="config_bodyFontFamily" />
+
 </resources>
