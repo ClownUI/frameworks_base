@@ -203,6 +203,7 @@ public class KeyguardIndicationController {
     private boolean mFaceDetectionRunning;
 
     private int mChargingCurrent;
+    private int mBatteryCurrentDivider;
     private double mChargingVoltage;
     private float mTemperature;
 
@@ -292,6 +293,8 @@ public class KeyguardIndicationController {
         mKeyguardLogger = keyguardLogger;
         mScreenLifecycle.addObserver(mScreenObserver);
         mAlternateBouncerInteractor = alternateBouncerInteractor;
+        mBatteryCurrentDivider = mContext.getResources()
+                .getInteger(R.integer.config_battCurrentDivider);
 
         mFaceAcquiredMessageDeferral = faceHelpMessageDeferral;
         mCoExFaceAcquisitionMsgIdsToShow = new HashSet<>();
@@ -1004,8 +1007,7 @@ public class KeyguardIndicationController {
             Settings.System.LOCKSCREEN_BATTERY_INFO, 0, UserHandle.USER_CURRENT) == 1;
         if (showbatteryInfo) {
             if (mChargingCurrent > 0) {
-                current = (mChargingCurrent < 5 ? (mChargingCurrent * 1000)
-                        : (mChargingCurrent < 4000 ? mChargingCurrent : (mChargingCurrent / 1000)));
+                current = (mChargingCurrent / mBatteryCurrentDivider);
                 batteryInfo = batteryInfo + current + "mA";
             }
             if (mChargingVoltage > 0 && mChargingCurrent > 0) {
