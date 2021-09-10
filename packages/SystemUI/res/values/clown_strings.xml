@@ -43,4 +43,9 @@
 
     <!-- Label for area where tiles can be added to the qs panel -->
     <string name="drag_or_tap_to_add_tiles">Hold &amp; drag or tap to add tiles</string>
+    
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">used today</string>
+    <string name="usage_data_default_suffix">Data</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
 </resources>
