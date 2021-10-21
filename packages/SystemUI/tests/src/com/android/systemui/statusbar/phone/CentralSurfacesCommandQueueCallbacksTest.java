@@ -57,6 +57,7 @@ import com.android.systemui.statusbar.CommandQueue;
 import com.android.systemui.statusbar.notification.stack.NotificationStackScrollLayoutController;
 import com.android.systemui.statusbar.policy.DeviceProvisionedController;
 import com.android.systemui.statusbar.policy.HeadsUpManager;
+import com.android.systemui.statusbar.policy.FlashlightController;
 import com.android.systemui.statusbar.policy.KeyguardStateController;
 import com.android.systemui.statusbar.policy.RemoteInputQuickSettingsDisabler;
 
@@ -102,6 +103,7 @@ public class CentralSurfacesCommandQueueCallbacksTest extends SysuiTestCase {
     @Mock private UserTracker mUserTracker;
     @Mock private QSHost mQSHost;
     @Mock private ActivityStarter mActivityStarter;
+    @Mock private FlashlightController mFlashlightController;
     @Mock private EmergencyGestureIntentFactory mEmergencyGestureIntentFactory;
 
     CentralSurfacesCommandQueueCallbacks mSbcqCallbacks;
@@ -140,6 +142,7 @@ public class CentralSurfacesCommandQueueCallbacksTest extends SysuiTestCase {
                 mUserTracker,
                 mQSHost,
                 mActivityStarter,
+                mFlashlightController,
                 mEmergencyGestureIntentFactory);
 
         when(mUserTracker.getUserHandle()).thenReturn(
