@@ -177,6 +177,7 @@ public class CommandQueue extends IStatusBar.Stub implements
     private static final int MSG_CONFIRM_IMMERSIVE_PROMPT = 77 << MSG_SHIFT;
     private static final int MSG_IMMERSIVE_CHANGED = 78 << MSG_SHIFT;
     private static final int MSG_SET_QS_TILES = 79 << MSG_SHIFT;
+    private static final int MSG_TOGGLE_CAMERA_FLASH = 80 << MSG_SHIFT;
     private static final int MSG_ENTER_DESKTOP = 80 << MSG_SHIFT;
     public static final int FLAG_EXCLUDE_NONE = 0;
     public static final int FLAG_EXCLUDE_SEARCH_PANEL = 1 << 0;
@@ -521,6 +522,11 @@ public class CommandQueue extends IStatusBar.Stub implements
          * @see IStatusBar#immersiveModeChanged
          */
         default void immersiveModeChanged(int rootDisplayAreaId, boolean isImmersiveMode) {}
+
+        /**
+         * @see IStatusBar#toggleCameraFlash
+         */
+        default void toggleCameraFlash() {}
 
         /**
          * @see IStatusBar#enterDesktop(int)
@@ -1435,6 +1441,14 @@ public class CommandQueue extends IStatusBar.Stub implements
         mHandler.obtainMessage(MSG_ENTER_DESKTOP, args).sendToTarget();
     }
 
+    @Override
+    public void toggleCameraFlash() {
+        synchronized (mLock) {
+            mHandler.removeMessages(MSG_TOGGLE_CAMERA_FLASH);
+            mHandler.sendEmptyMessage(MSG_TOGGLE_CAMERA_FLASH);
+        }
+    }
+
     private final class H extends Handler {
         private H(Looper l) {
             super(l);
@@ -1930,6 +1944,11 @@ public class CommandQueue extends IStatusBar.Stub implements
                     boolean isImmersiveMode = args.argi2 != 0;
                     for (int i = 0; i < mCallbacks.size(); i++) {
                         mCallbacks.get(i).immersiveModeChanged(rootDisplayAreaId, isImmersiveMode);
+                    }
+                    break;
+                case MSG_TOGGLE_CAMERA_FLASH:
+                    for (int i = 0; i < mCallbacks.size(); i++) {
+                        mCallbacks.get(i).toggleCameraFlash();
                     }
                     break;
                 case MSG_ENTER_DESKTOP: {
