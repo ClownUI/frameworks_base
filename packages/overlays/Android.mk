@@ -86,6 +86,17 @@ LOCAL_REQUIRED_MODULES := \
     IconPackGradiconSystemUIOverlay \
     IconPackLornAndroidOverlay \
     IconPackLornSystemUIOverlay \
+    IconShapeCylinderOverlay \
+    IconShapeHeartOverlay \
+    IconShapeHexagonOverlay \
+    IconShapeLeafOverlay \
+    IconShapePebbleOverlay \
+    IconShapeRoundedRectOverlay \
+    IconShapeSquareOverlay \
+    IconShapeSquircleOverlay \
+    IconShapeTaperedRectOverlay \
+    IconShapeTeardropOverlay \
+    IconShapeVesselOverlay \
     NavigationBarMode3ButtonOverlay \
     NavigationBarModeGesturalOverlay \
     NavigationBarModeGesturalOverlayNarrowBack \
