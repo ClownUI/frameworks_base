@@ -265,6 +265,7 @@ public class SecureSettings {
         Settings.Secure.CREDENTIAL_SERVICE_PRIMARY,
         Settings.Secure.EVEN_DIMMER_ACTIVATED,
         Settings.Secure.EVEN_DIMMER_MIN_NITS,
+        Settings.Secure.TETHERING_ALLOW_VPN_UPSTREAMS,
         Settings.Secure.STYLUS_POINTER_ICON_ENABLED,
         Settings.Secure.CAMERA_EXTENSIONS_FALLBACK,
         Settings.Secure.VISUAL_QUERY_ACCESSIBILITY_DETECTION_ENABLED
