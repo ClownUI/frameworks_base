@@ -970,6 +970,11 @@ interface IActivityManager {
     boolean isSwipeToScreenshotGestureActive();
 
     /**
+     *  Force full screen for devices with cutout
+     */
+    boolean shouldForceCutoutFullscreen(in String packageName);
+
+    /**
      * Notify AMS about binder transactions to frozen apps.
      *
      * @param debugPid The binder transaction sender
