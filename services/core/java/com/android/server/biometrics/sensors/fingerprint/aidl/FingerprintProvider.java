@@ -219,6 +219,9 @@ public class FingerprintProvider implements IBinder.DeathRecipient, ServiceProvi
 
         initAuthenticationBroadcastReceiver();
         initSensors(resetLockoutRequiresHardwareAuthToken, props, gestureAvailabilityDispatcher);
+
+	mCleanupEnabled = mContext.getResources().getBoolean(
+                R.bool.config_cleanupUnusedFingerprints);
     }
 
     private void initAuthenticationBroadcastReceiver() {
@@ -250,8 +253,6 @@ public class FingerprintProvider implements IBinder.DeathRecipient, ServiceProvi
                 }
             }
         } else {
-            mCleanupEnabled = mContext.getResources().getBoolean(
-                    R.bool.config_cleanupUnusedFingerprints);
 
             final List<SensorLocationInternal> workaroundLocations =
                     getWorkaroundSensorProps(mContext);
