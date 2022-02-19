@@ -31,5 +31,5 @@
     <integer name="config_screenRecorderMaxFramerate">0</integer>
 
     <!-- StatusBar burn-in protection -->
-    <bool name="config_statusBarBurnInProtection">false</bool>
+    <bool name="config_disableStatusBarBurnInProtection">false</bool>
 </resources>
