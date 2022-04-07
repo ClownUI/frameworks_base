@@ -301,6 +301,8 @@ public class VolumeDialogImpl implements VolumeDialog, Dumpable,
     // Number of animating rows
     private int mAnimatingRows = 0;
 
+    private FrameLayout mRoundedBorderBottom;
+
     private TunerService mTunerService;
     private final TunerService.Tunable mTunable = new TunerService.Tunable() {
         @Override
@@ -663,6 +665,8 @@ public class VolumeDialogImpl implements VolumeDialog, Dumpable,
 
         mExpandRowsView = mDialog.findViewById(R.id.expandable_indicator_container);
         mExpandRows = mDialog.findViewById(R.id.expandable_indicator);
+
+        mRoundedBorderBottom = mDialog.findViewById(R.id.rounded_border_bottom);
 
         if (mVolumePanelOnLeft) {
             if (mRingerAndDrawerContainer != null) {
@@ -1265,6 +1269,11 @@ public class VolumeDialogImpl implements VolumeDialog, Dumpable,
     }
 
     private void initSettingsH(int lockTaskModeState) {
+        if (mRoundedBorderBottom != null){
+            mRoundedBorderBottom.setVisibility(!mDeviceProvisionedController.isCurrentUserSetup() ||
+                    mActivityManager.getLockTaskModeState() != LOCK_TASK_MODE_NONE
+                    ? VISIBLE : GONE);
+        }
         if (mSettingsView != null) {
             mSettingsView.setVisibility(
                     mDeviceProvisionedController.isCurrentUserSetup() &&
