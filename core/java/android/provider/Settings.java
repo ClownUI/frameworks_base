@@ -5628,6 +5628,11 @@ public final class Settings {
         public static final String DOUBLE_TAP_SLEEP_GESTURE = "double_tap_sleep_gesture";
 
         /**
+         * @hide
+         */
+        public static final String ENABLE_TASKBAR = "enable_taskbar";
+        
+        /**
          * Keys we no longer back up under the current schema, but want to continue to
          * process when restoring historical backup datasets.
          *
