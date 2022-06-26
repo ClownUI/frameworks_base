@@ -55,6 +55,7 @@ import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Process;
+import android.os.RemoteException;
 import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
@@ -79,6 +80,7 @@ import android.window.WindowContext;
 import com.android.internal.app.ChooserActivity;
 import com.android.internal.logging.UiEventLogger;
 import com.android.internal.policy.PhoneWindow;
+import com.android.internal.statusbar.IStatusBarService;
 import com.android.settingslib.applications.InterestingConfigChanges;
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.broadcast.BroadcastSender;
@@ -235,6 +237,7 @@ public class ScreenshotController implements ScreenshotHandler {
     private final ScreenshotNotificationSmartActionsProvider
             mScreenshotNotificationSmartActionsProvider;
     private final TimeoutHandler mScreenshotHandler;
+    private final IStatusBarService mStatusBarService;
     private final ActionIntentExecutor mActionIntentExecutor;
     private final UserManager mUserManager;
     private final AssistContentRequester mAssistContentRequester;
@@ -300,6 +303,7 @@ public class ScreenshotController implements ScreenshotHandler {
             BroadcastDispatcher broadcastDispatcher,
             ScreenshotNotificationSmartActionsProvider screenshotNotificationSmartActionsProvider,
             ScreenshotActionsController.Factory screenshotActionsControllerFactory,
+            IStatusBarService statusBarService,
             ActionIntentExecutor actionIntentExecutor,
             ActionExecutor.Factory actionExecutorFactory,
             UserManager userManager,
@@ -319,6 +323,7 @@ public class ScreenshotController implements ScreenshotHandler {
         mMainExecutor = mainExecutor;
         mScrollCaptureExecutor = scrollCaptureExecutor;
         mScreenshotNotificationSmartActionsProvider = screenshotNotificationSmartActionsProvider;
+        mStatusBarService = statusBarService;
         mBgExecutor = Executors.newSingleThreadExecutor();
         mBroadcastSender = broadcastSender;
         mBroadcastDispatcher = broadcastDispatcher;
@@ -712,6 +717,12 @@ public class ScreenshotController implements ScreenshotHandler {
                     final Intent intent = ActionIntentCreator.INSTANCE.createLongScreenshotIntent(
                             owner, mContext);
                     mContext.startActivity(intent);
+
+                    try {
+                        mStatusBarService.collapsePanels();
+                    } catch (RemoteException e) {
+                        Log.e(TAG, "Error during collapsing panels", e);
+                    }
                 },
                 (destination, onTransitionEnd, longScreenshot) -> {
                     onTransitionEnd.run();
