@@ -11356,6 +11356,17 @@ public final class Settings {
         public static final String COMMUNAL_MODE_ENABLED = "communal_mode_enabled";
 
         /**
+         * Show lyric in status bar when playing music
+         * <ul>
+         *    <li> 0 = disabled </li>
+         *    <li> 1 = enabled </li>
+         * </ul>
+         *
+         * @hide
+         */
+        public static final String STATUS_BAR_SHOW_LYRIC = "status_bar_show_lyric";
+
+        /**
          * An array of SSIDs of Wi-Fi networks that, when connected, are considered safe to enable
          * the communal mode.
          *
@@ -11563,6 +11574,7 @@ public final class Settings {
          */
         public static final String NAVIGATION_BAR_HINT = "navigation_bar_hint";
     }
+
 
     /**
      * Global system settings, containing preferences that always apply identically
