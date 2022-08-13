@@ -44,6 +44,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.animation.Animator;
 
+import com.android.systemui.Dependency;
 import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.systemui.Dependency;
 import com.android.systemui.Dumpable;
@@ -79,6 +80,7 @@ import com.android.systemui.statusbar.phone.ongoingcall.OngoingCallListener;
 import com.android.systemui.statusbar.policy.KeyguardStateController;
 import com.android.systemui.statusbar.window.StatusBarWindowStateController;
 import com.android.systemui.statusbar.window.StatusBarWindowStateListener;
+import com.android.systemui.tuner.TunerService;
 import com.android.systemui.util.CarrierConfigTracker;
 import com.android.systemui.util.CarrierConfigTracker.CarrierConfigChangedListener;
 import com.android.systemui.util.CarrierConfigTracker.DefaultDataSubscriptionChangedListener;
@@ -100,7 +102,10 @@ import java.util.concurrent.Executor;
 @SuppressLint("ValidFragment")
 public class CollapsedStatusBarFragment extends Fragment implements CommandQueue.Callbacks,
         StatusBarStateController.StateListener,
-        SystemStatusAnimationCallback, Dumpable {
+        SystemStatusAnimationCallback, Dumpable, TunerService.Tunable {
+
+    private static final String STATUSBAR_CLOCK_CHIP =
+            "system:" + Settings.System.STATUSBAR_CLOCK_CHIP;
 
     public static final String TAG = "CollapsedStatusBarFragment";
     private static final String EXTRA_PANEL_STATE = "panel_state";
@@ -137,6 +142,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     private final DumpManager mDumpManager;
     private final StatusBarWindowStateController mStatusBarWindowStateController;
     private final KeyguardUpdateMonitor mKeyguardUpdateMonitor;
+    private boolean mShowSBClockBg;
 
     private ClockController mClockController;
     private BatteryMeterView mBatteryMeterView;
@@ -308,6 +314,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         mBatteryMeterView.addCallback(mBatteryMeterViewCallback);
         mClockController = mStatusBar.getClockController();
         mOngoingCallChip = mStatusBar.findViewById(R.id.ongoing_call_chip);
+        mClockView = mStatusBar.findViewById(R.id.clock);
         showEndSideContent(false);
         showClock(false);
         initOperatorName();
@@ -373,6 +380,8 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         initOngoingCallChip();
         mAnimationScheduler.addCallback(this);
 
+        Dependency.get(TunerService.class).addTunable(this, STATUSBAR_CLOCK_CHIP);
+
         mSecureSettings.registerContentObserverForUser(
                 Settings.Secure.STATUS_BAR_SHOW_VIBRATE_ICON,
                 false,
@@ -393,6 +402,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        Dependency.get(TunerService.class).removeTunable(this);
         mStatusBarIconController.removeIconGroup(mDarkIconManager);
         if (mBatteryMeterView != null) {
             mBatteryMeterView.removeCallback(mBatteryMeterViewCallback);
@@ -406,6 +416,37 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
             mStartableStates.put(startable, Startable.State.STOPPED);
         }
         mDumpManager.unregisterDumpable(getClass().getSimpleName());
+    }
+
+    @Override
+    public void onTuningChanged(String key, String newValue) {
+        switch (key) {
+            case STATUSBAR_CLOCK_CHIP:
+                mShowSBClockBg = 
+                        TunerService.parseIntegerSwitch(newValue, false);
+                updateStatusBarClock();
+                break;
+            default:
+                break;
+         }
+    }
+    
+    private void updateStatusBarClock() {
+        if (mShowSBClockBg) {
+            mClockView.setBackgroundResource(R.drawable.sb_date_bg);
+            mClockView.setPadding(10,2,10,2);
+        } else {
+            int clockPaddingStart = getResources().getDimensionPixelSize(
+                    R.dimen.status_bar_clock_starting_padding);
+            int clockPaddingEnd = getResources().getDimensionPixelSize(
+                    R.dimen.status_bar_clock_end_padding);
+            int leftClockPaddingStart = getResources().getDimensionPixelSize(
+                    R.dimen.status_bar_left_clock_starting_padding);
+            int leftClockPaddingEnd = getResources().getDimensionPixelSize(
+                    R.dimen.status_bar_left_clock_end_padding);
+            mClockView.setBackgroundResource(0);
+            mClockView.setPaddingRelative(leftClockPaddingStart, 0, leftClockPaddingEnd, 0);
+        }
     }
 
     /** Initializes views related to the notification icon area. */
