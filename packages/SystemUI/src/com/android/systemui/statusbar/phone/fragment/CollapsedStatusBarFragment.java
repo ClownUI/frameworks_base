@@ -26,8 +26,10 @@ import static com.android.systemui.statusbar.events.SystemStatusAnimationSchedul
 import android.annotation.Nullable;
 import android.annotation.SuppressLint;
 import android.app.Fragment;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.database.ContentObserver;
+import android.os.Handler;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.os.UserHandle;
@@ -121,6 +123,9 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     private View mClockView;
     private View mOngoingCallChip;
     private View mNotificationIconAreaInner;
+    private View mCenterClock;
+    private View mLeftClock;
+    private View mRightClock;
     private int mDisabled1;
     private int mDisabled2;
     private DarkIconManager mDarkIconManager;
@@ -150,6 +155,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     private StatusIconContainer mStatusIcons;
     private int mSignalClusterEndPadding = 0;
     private LyricController mLyricController;
+    private boolean mShowSBClockBg = true;
     
     private List<String> mBlockedIcons = new ArrayList<>();
     private Map<Startable, Startable.State> mStartableStates = new ArrayMap<>();
@@ -315,6 +321,9 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         mBatteryMeterView = mStatusBar.findViewById(R.id.battery);
         mBatteryMeterView.addCallback(mBatteryMeterViewCallback);
         mOngoingCallChip = mStatusBar.findViewById(R.id.ongoing_call_chip);
+        mCenterClock = mStatusBar.findViewById(R.id.clock_center);
+        mLeftClock = mStatusBar.findViewById(R.id.clock);
+        mRightClock = mStatusBar.findViewById(R.id.clock_right);
         showEndSideContent(false);
         showClock(false);
         initOperatorName();
@@ -786,6 +795,40 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         mLocationPublisher.updateStatusBarMargin(leftMargin, rightMargin);
     }
 
+  private void updateStatusBarClock() {
+        if (mShowSBClockBg != 0) {
+            String chipStyleUri = "sb_date_bg" + String.valueOf(mShowSBClockBg);
+            int resId = getContext().getResources().getIdentifier(chipStyleUri, "drawable", "com.android.systemui");
+            mLeftClock.setBackgroundResource(resId);
+            mLeftClock.setPadding(12,4,12,4);
+            mLeftClock.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+            mCenterClock.setBackgroundResource(resId);
+            mCenterClock.setPadding(12,4,12,4);
+            mCenterClock.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+            mRightClock.setBackgroundResource(resId);
+            mRightClock.setPadding(12,4,12,4);
+            mRightClock.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+        } else {
+            int clockPaddingStart = getResources().getDimensionPixelSize(
+                    R.dimen.status_bar_clock_starting_padding);
+            int clockPaddingEnd = getResources().getDimensionPixelSize(
+                    R.dimen.status_bar_clock_end_padding);
+            int leftClockPaddingStart = getResources().getDimensionPixelSize(
+                    R.dimen.status_bar_left_clock_starting_padding);
+            int leftClockPaddingEnd = getResources().getDimensionPixelSize(
+                    R.dimen.status_bar_left_clock_end_padding);
+            mLeftClock.setBackgroundResource(0);
+            mLeftClock.setPaddingRelative(leftClockPaddingStart, 0, leftClockPaddingEnd, 0);
+            mCenterClock.setBackgroundResource(0);
+            mCenterClock.setPaddingRelative(0,0,0,0);
+            mRightClock.setBackgroundResource(0);
+            mRightClock.setPaddingRelative(clockPaddingStart, 0, clockPaddingEnd, 0);
+            mLeftClock.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
+            mCenterClock.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
+            mRightClock.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
+        }
+    }
+    
     private final ContentObserver mVolumeSettingObserver = new ContentObserver(null) {
         @Override
         public void onChange(boolean selfChange) {
