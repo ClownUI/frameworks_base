@@ -122,4 +122,7 @@
     <java-symbol type="string" name="reboot_title" />
     <java-symbol type="string" name="reboot_message" />
 
+    <!-- Whether to cancel fingerprint operation if not idle -->
+    <java-symbol type="bool" name="config_fpCancelIfNotIdle" />
+
 </resources>
