@@ -20,6 +20,7 @@ import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 import android.annotation.NonNull;
 import android.app.Dialog;
 import android.content.Context;
+import android.view.CrossWindowBlurListeners;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +32,8 @@ import android.widget.LinearLayout;
 import com.android.systemui.MultiListLayout;
 import com.android.systemui.MultiListLayout.MultiListAdapter;
 import com.android.systemui.R;
+import com.android.systemui.statusbar.BlurUtils;
+import com.android.systemui.dump.DumpManager;
 
 /**
  * Creates a customized Dialog for displaying the Shut Down and Restart actions.
@@ -88,8 +91,14 @@ public class GlobalActionsPowerDialog {
             LayoutParams.FLAG_HARDWARE_ACCELERATED
         );
 
+        Dialog dialog = new Dialog(context,
+                com.android.systemui.R.style.Theme_SystemUI_Dialog_GlobalActionsLite);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(view);
+        BlurUtils blurUtils = new BlurUtils(context.getResources(),
+                CrossWindowBlurListeners.getInstance(), new DumpManager());
+        window.setDimAmount(blurUtils.supportsBlursOnWindows() ? 0.54f : 0.88f);
+
         return dialog;
     }
 }
