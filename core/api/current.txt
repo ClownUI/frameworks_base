@@ -32582,6 +32582,7 @@ package android.os.storage {
     method @NonNull public java.util.List<android.os.storage.StorageVolume> getStorageVolumes();
     method @NonNull @RequiresPermission(android.Manifest.permission.MANAGE_EXTERNAL_STORAGE) public java.util.List<android.os.storage.StorageVolume> getStorageVolumesIncludingSharedProfiles();
     method @NonNull public java.util.UUID getUuidForPath(@NonNull java.io.File) throws java.io.IOException;
+    method public static boolean inCryptKeeperBounce();
     method public boolean isAllocationSupported(@NonNull java.io.FileDescriptor);
     method public boolean isCacheBehaviorGroup(java.io.File) throws java.io.IOException;
     method public boolean isCacheBehaviorTombstone(java.io.File) throws java.io.IOException;
