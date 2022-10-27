@@ -21,5 +21,8 @@
 
     <!-- Fps info text -->
     <dimen name="fps_info_text_padding">4dp</dimen>
+    
+    <!-- Bluetooth dialog -->
+    <dimen name="bluetooth_dialog_active_device_bottom_margin">4dp</dimen>
 
 </resources>
