@@ -43,10 +43,8 @@
     <!-- For dynamic default font styles -->
     <java-symbol type="string" name="config_bodyFontFamily" />
 
-    <!-- Fingerprint from a certified device against current platform SPL level -->
-    <java-symbol type="string" name="config_certifiedFingerprint" />
-
-    <!-- Fingerprint from stock ROM -->
+    <!-- PropImitationHooks -->
+    <java-symbol type="array" name="config_certifiedBuildProperties" />
     <java-symbol type="string" name="config_stockFingerprint" />
 
 </resources>
