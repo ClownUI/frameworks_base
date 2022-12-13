@@ -118,4 +118,10 @@
         android:key="ims"
         android:title="@string/status_bar_ims" />
 
+    <!-- secure -->
+
+    <com.android.systemui.tuner.StatusBarSwitch
+        android:icon="@drawable/ic_statusbar_clock"
+        android:key="clock"
+        android:title="@string/clock" />
 </PreferenceScreen>
