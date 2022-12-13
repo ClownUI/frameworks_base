@@ -119,4 +119,7 @@
         other {# devices connected}
     }</string>
 
+     <!-- Name of the clock in status bar [CHAR LIMIT=30] -->
+    <string name="clock">Clock</string>
+    
 </resources>
