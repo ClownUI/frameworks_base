@@ -66,5 +66,9 @@
 
     <!-- Enable face auth only when swiping security view -->
     <bool name="config_faceAuthOnlyOnSecurityView">false</bool>
+
+    <!-- Ignore post running notifications for selected apps -->
+    <string-array name="config_postNotificationIgnoredApps" translatable="false">
+    </string-array>
     
 </resources>

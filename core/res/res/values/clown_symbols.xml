@@ -62,4 +62,7 @@
 
     <!-- Enable face auth only when swiping security view -->
     <java-symbol type="bool" name="config_faceAuthOnlyOnSecurityView" />
+
+    <!-- Ignore post running notifications for selected apps -->
+    <java-symbol type="array" name="config_postNotificationIgnoredApps" />
 </resources>
