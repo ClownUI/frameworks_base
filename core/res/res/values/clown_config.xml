@@ -203,4 +203,8 @@
     </string>
     <string name="config_batterymeterLandPowersavePathOrigami" translatable="false">@string/config_batterymeterLandPerimeterPathOrigami</string>
     <string name="config_batterymeterLandErrorPerimeterPathOrigami" translatable="false">@string/config_batterymeterLandPerimeterPathOrigami</string>
+
+    <!-- Ignore post running notifications for selected apps -->
+    <string-array name="config_postNotificationIgnoredApps" translatable="false">
+    </string-array>
 </resources>
