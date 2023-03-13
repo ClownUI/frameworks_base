@@ -19,4 +19,10 @@
     <!-- reTicker -->
     <color name="reticker_background_color">@android:color/system_neutral1_50</color>
 
+     <!-- Keyguard buttons (udfps, affordance etc.) -->    
+    <color name="keyguard_button_bg_color">?android:attr/textColorPrimaryInverse</color>
+
+    <!-- QS Header Images -->
+    <color name="puteh_ireng">#ffffffff</color>
+
 </resources>
