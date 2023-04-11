@@ -268,6 +268,8 @@ public class SecureSettings {
         Settings.Secure.TETHERING_ALLOW_VPN_UPSTREAMS,
         Settings.Secure.STYLUS_POINTER_ICON_ENABLED,
         Settings.Secure.CAMERA_EXTENSIONS_FALLBACK,
-        Settings.Secure.VISUAL_QUERY_ACCESSIBILITY_DETECTION_ENABLED
+        Settings.Secure.VISUAL_QUERY_ACCESSIBILITY_DETECTION_ENABLED,
+        Settings.Secure.DOZE_PICK_UP_GESTURE_AMBIENT,
+        Settings.Secure.DOZE_TAP_GESTURE_AMBIENT
     };
 }
