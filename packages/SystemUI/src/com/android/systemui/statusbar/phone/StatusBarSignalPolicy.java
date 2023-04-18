@@ -57,7 +57,7 @@ public class StatusBarSignalPolicy implements SignalCallback,
     private final String mSlotEthernet;
     private final String mSlotVpn;
     private final String mSlotNoCalling;
-    private final String mSlotCallStrength;
+    // private final String mSlotCallStrength;
 
     private final Context mContext;
     private final StatusBarIconController mIconController;
@@ -108,8 +108,8 @@ public class StatusBarSignalPolicy implements SignalCallback,
         mSlotEthernet = mContext.getString(com.android.internal.R.string.status_bar_ethernet);
         mSlotVpn      = mContext.getString(com.android.internal.R.string.status_bar_vpn);
         mSlotNoCalling = mContext.getString(com.android.internal.R.string.status_bar_no_calling);
-        mSlotCallStrength =
-                mContext.getString(com.android.internal.R.string.status_bar_call_strength);
+        // mSlotCallStrength =
+        //         mContext.getString(com.android.internal.R.string.status_bar_call_strength);
         mActivityEnabled = mContext.getResources().getBoolean(R.bool.config_showActivity);
     }
 
@@ -242,12 +242,12 @@ public class StatusBarSignalPolicy implements SignalCallback,
             state.callStrengthResId = statusIcon.icon;
             state.callStrengthDescription = statusIcon.contentDescription;
         }
-        if (mCarrierConfigTracker.getCallStrengthConfig(subId)) {
-            mIconController.setCallStrengthIcons(mSlotCallStrength,
-                    CallIndicatorIconState.copyStates(mCallIndicatorStates));
-        } else {
-            mIconController.removeIcon(mSlotCallStrength, subId);
-        }
+        // if (mCarrierConfigTracker.getCallStrengthConfig(subId)) {
+        //     mIconController.setCallStrengthIcons(mSlotCallStrength,
+        //             CallIndicatorIconState.copyStates(mCallIndicatorStates));
+        // } else {
+        //     mIconController.removeIcon(mSlotCallStrength, subId);
+        // }
         mIconController.setNoCallingIcons(mSlotNoCalling,
                 CallIndicatorIconState.copyStates(mCallIndicatorStates));
     }
@@ -339,7 +339,7 @@ public class StatusBarSignalPolicy implements SignalCallback,
 
         mIconController.removeAllIconsForSlot(mSlotMobile);
         mIconController.removeAllIconsForSlot(mSlotNoCalling);
-        mIconController.removeAllIconsForSlot(mSlotCallStrength);
+        // mIconController.removeAllIconsForSlot(mSlotCallStrength);
         mMobileStates.clear();
         List<CallIndicatorIconState> noCallingStates = new ArrayList<CallIndicatorIconState>();
         noCallingStates.addAll(mCallIndicatorStates);
