@@ -109,6 +109,9 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         StatusBarStateController.StateListener,
         SystemStatusAnimationCallback, Dumpable, TunerService.Tunable {
 
+    private static final String STATUSBAR_CLOCK_CHIP =
+            "system:" + Settings.System.STATUSBAR_CLOCK_CHIP;
+
     public static final String TAG = "CollapsedStatusBarFragment";
     private static final String EXTRA_PANEL_STATE = "panel_state";
     public static final String STATUS_BAR_ICON_MANAGER_TAG = "status_bar_icon_manager";
@@ -155,7 +158,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     private StatusIconContainer mStatusIcons;
     private int mSignalClusterEndPadding = 0;
     private LyricController mLyricController;
-    private boolean mShowSBClockBg = true;
+    private int mShowSBClockBg;
     
     private List<String> mBlockedIcons = new ArrayList<>();
     private Map<Startable, Startable.State> mStartableStates = new ArrayMap<>();
@@ -332,6 +335,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         mStatusBarFragmentComponent.getHeadsUpAppearanceController().setLyricViewController(mLyricController);
         Dependency.get(TunerService.class).addTunable(this, StatusBarIconController.ICON_HIDE_LIST);
         Dependency.get(TunerService.class).addTunable(this, Settings.Secure.STATUS_BAR_SHOW_LYRIC);
+        Dependency.get(TunerService.class).addTunable(this, STATUSBAR_CLOCK_CHIP);
 
         mSystemEventAnimator =
                 new StatusBarSystemEventAnimator(mEndSideContent, getResources());
@@ -445,6 +449,15 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
                 mLyricController.setEnabled(TunerService.parseIntegerSwitch(newValue, false));
             }
         }
+        switch (key) {
+            case STATUSBAR_CLOCK_CHIP:
+                mShowSBClockBg = 
+                        TunerService.parseInteger(newValue, 0);
+                updateStatusBarClock();
+                break;
+            default:
+                break;
+         }
     }
 
     /** Initializes views related to the notification icon area. */
@@ -835,6 +848,40 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
             updateBlockedIcons();
         }
     };
+
+    private void updateStatusBarClock() {
+        if (mShowSBClockBg != 0) {
+            String chipStyleUri = "sb_date_bg" + String.valueOf(mShowSBClockBg);
+            int resId = getContext().getResources().getIdentifier(chipStyleUri, "drawable", "com.android.systemui");
+            mLeftClock.setBackgroundResource(resId);
+            mLeftClock.setPadding(12,4,12,4);
+            mLeftClock.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+            mCenterClock.setBackgroundResource(resId);
+            mCenterClock.setPadding(12,4,12,4);
+            mCenterClock.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+            mRightClock.setBackgroundResource(resId);
+            mRightClock.setPadding(12,4,12,4);
+            mRightClock.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+        } else {
+            int clockPaddingStart = getResources().getDimensionPixelSize(
+                    R.dimen.status_bar_clock_starting_padding);
+            int clockPaddingEnd = getResources().getDimensionPixelSize(
+                    R.dimen.status_bar_clock_end_padding);
+            int leftClockPaddingStart = getResources().getDimensionPixelSize(
+                    R.dimen.status_bar_left_clock_starting_padding);
+            int leftClockPaddingEnd = getResources().getDimensionPixelSize(
+                    R.dimen.status_bar_left_clock_end_padding);
+            mLeftClock.setBackgroundResource(0);
+            mLeftClock.setPaddingRelative(leftClockPaddingStart, 0, leftClockPaddingEnd, 0);
+            mCenterClock.setBackgroundResource(0);
+            mCenterClock.setPaddingRelative(0,0,0,0);
+            mRightClock.setBackgroundResource(0);
+            mRightClock.setPaddingRelative(clockPaddingStart, 0, clockPaddingEnd, 0);
+            mLeftClock.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
+            mCenterClock.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
+            mRightClock.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
+        }
+    }
 
     // Listen for view end changes of PhoneStatusBarView and publish that to the privacy dot
     private View.OnLayoutChangeListener mStatusBarLayoutListener =
