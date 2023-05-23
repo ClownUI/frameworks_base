@@ -26,6 +26,7 @@ import static com.android.systemui.statusbar.events.SystemStatusAnimationSchedul
 import android.annotation.Nullable;
 import android.annotation.SuppressLint;
 import android.app.Fragment;
+import android.content.Context;
 import android.database.ContentObserver;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -142,6 +143,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     private final StatusBarWindowStateController mStatusBarWindowStateController;
     private final KeyguardUpdateMonitor mKeyguardUpdateMonitor;
     private ClockController mClockController;
+    private Context mContext;
     private boolean mIsClockBlacklisted;
 
     private BatteryMeterView mBatteryMeterView;
@@ -316,6 +318,8 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         showClock(false);
         initOperatorName();
         initNotificationIconArea();
+
+        mContext = getContext();
         Dependency.get(TunerService.class).addTunable(this, StatusBarIconController.ICON_HIDE_LIST);
 
         mSystemEventAnimator =
@@ -417,7 +421,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     public void onTuningChanged(String key, String newValue) {
         boolean wasClockBlacklisted = mIsClockBlacklisted;
         mIsClockBlacklisted = StatusBarIconController.getIconHideList(
-                getContext(), newValue).contains("clock");
+                mContext, newValue).contains("clock");
         if (wasClockBlacklisted && !mIsClockBlacklisted) {
             showClock(false);
         }
