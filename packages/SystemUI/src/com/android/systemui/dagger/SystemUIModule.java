@@ -63,6 +63,7 @@ import com.android.systemui.qrcodescanner.dagger.QRCodeScannerModule;
 import com.android.systemui.qs.FgsManagerController;
 import com.android.systemui.qs.FgsManagerControllerImpl;
 import com.android.systemui.qs.footer.dagger.FooterActionsModule;
+import com.android.systemui.qs.tiles.CustomQSModule;
 import com.android.systemui.recents.Recents;
 import com.android.systemui.screenrecord.ScreenRecordModule;
 import com.android.systemui.screenshot.dagger.ScreenshotModule;
@@ -146,6 +147,7 @@ import dagger.Provides;
             ClockRegistryModule.class,
             ConnectivityModule.class,
             CoroutinesModule.class,
+            CustomQSModule.class,
             DreamModule.class,
             ControlsModule.class,
             DemoModeModule.class,
