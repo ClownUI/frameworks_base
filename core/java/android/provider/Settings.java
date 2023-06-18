@@ -12542,6 +12542,12 @@ public final class Settings {
                 "com.android.server.display.HBM_SETTING_KEY";
 
         /**
+         * Whether to use black theme for dark mode
+         * @hide
+         */
+        public static final String BERRY_BLACK_THEME = "berry_black_theme";
+        
+        /**
          * Control whether to hide ADB and Developer settings enable status.
          * @hide
          */
