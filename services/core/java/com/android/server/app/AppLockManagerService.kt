@@ -50,7 +50,7 @@ import android.util.Slog
 
 import com.android.internal.R
 import com.android.internal.annotations.GuardedBy
-import com.android.internal.util.proton.ProtonUtils
+import com.android.internal.util.clown.ClownUtils
 import com.android.server.LocalServices
 import com.android.server.SystemService
 import com.android.server.notification.NotificationManagerInternal
@@ -494,7 +494,7 @@ class AppLockManagerService(
                 userId
             )
             if (!aInfo.isSystemApp()) return
-            if (ProtonUtils.launchablePackages(context).contains(pkg)) return
+            if (ClownUtils.launchablePackages(context).contains(pkg)) return
             if (!whiteListedSystemApps.contains(pkg))
                 throw IllegalArgumentException("System package $pkg is not whitelisted")
         } catch(e: PackageManager.NameNotFoundException) {
