@@ -121,7 +121,7 @@ class FPSInfoTile @Inject constructor(
         refreshState()
     }
 
-    override fun getMetricsCategory(): Int = MetricsEvent.CUSTOM
+    override fun getMetricsCategory(): Int = MetricsEvent.CLOWN
 
     private fun toggleState() {
         logD("toggleState")
