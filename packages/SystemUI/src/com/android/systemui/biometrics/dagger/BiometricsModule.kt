@@ -26,6 +26,9 @@ import com.android.systemui.biometrics.data.repository.BiometricStatusRepository
 import com.android.systemui.biometrics.data.repository.BiometricStatusRepositoryImpl
 import com.android.systemui.biometrics.data.repository.DisplayStateRepository
 import com.android.systemui.biometrics.data.repository.DisplayStateRepositoryImpl
+
+import android.content.Context
+
 import com.android.systemui.biometrics.data.repository.FacePropertyRepository
 import com.android.systemui.biometrics.data.repository.FacePropertyRepositoryImpl
 import com.android.systemui.biometrics.data.repository.FaceSettingsRepository
@@ -39,6 +42,8 @@ import com.android.systemui.biometrics.udfps.EllipseOverlapDetector
 import com.android.systemui.biometrics.udfps.OverlapDetector
 import com.android.systemui.biometrics.ui.binder.SideFpsOverlayViewBinder
 import com.android.systemui.dagger.SysUISingleton
+import com.android.systemui.biometrics.FingerprintInteractiveToAuthProvider
+import com.android.systemui.biometrics.FingerprintInteractiveToAuthProviderImpl
 import com.android.systemui.statusbar.policy.ConfigurationController.ConfigurationListener
 import com.android.systemui.util.concurrency.ThreadFactory
 import dagger.Binds
@@ -103,6 +108,10 @@ interface BiometricsModule {
             threadFactory.buildExecutorOnNewThread("biometrics")
 
         @Provides fun providesUdfpsUtils(): UdfpsUtils = UdfpsUtils()
+
+        @Provides
+        fun providesFingerprintInteractiveToAuth(ctx: Context): FingerprintInteractiveToAuthProvider =
+            FingerprintInteractiveToAuthProviderImpl(ctx);
 
         @Provides
         @SysUISingleton
