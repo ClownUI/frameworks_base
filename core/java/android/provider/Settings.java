@@ -5759,6 +5759,11 @@ public final class Settings {
          */
         public static final String SMART_5G = "smart_5g";
 
+        /**
+         * @hide
+         */
+        public static final String OMNIJAWS_WEATHER_ICON_PACK = "omnijaws_weather_icon_pack";
+
        /**
          * These are all public system settings
          *
@@ -5876,6 +5881,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(DOUBLE_TAP_SLEEP_LOCKSCREEN);
             PRIVATE_SETTINGS.add(DOUBLE_TAP_SLEEP_GESTURE);
             PRIVATE_SETTINGS.add(NAVIGATION_BAR_IME_SPACE);
+            PRIVATE_SETTINGS.add(OMNIJAWS_WEATHER_ICON_PACK);
         }
 
         /**
