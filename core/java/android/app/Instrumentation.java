@@ -19,6 +19,7 @@ package android.app;
 import android.annotation.IntDef;
 import android.annotation.NonNull;
 import android.annotation.Nullable;
+import android.app.Instrumentation.ActivityResult;
 import android.compat.annotation.UnsupportedAppUsage;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
@@ -67,6 +68,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeoutException;
 
+import com.android.internal.util.clown.AttestationHooks;
+import com.android.internal.util.clown.GamesPropsUtils;
 import com.android.internal.util.clown.PixelPropsUtils;
 
 /**
@@ -1283,8 +1286,9 @@ public class Instrumentation {
         Application app = getFactory(context.getPackageName())
                 .instantiateApplication(cl, className);
         app.attach(context);
-        String packageName = context.getPackageName();
-        PixelPropsUtils.setProps(packageName);
+        AttestationHooks.setProps(context);
+        GamesPropsUtils.setProps(context);
+        PixelPropsUtils.setProps(context);
         return app;
     }
     
@@ -1302,8 +1306,9 @@ public class Instrumentation {
             ClassNotFoundException {
         Application app = (Application)clazz.newInstance();
         app.attach(context);
-        String packageName = context.getPackageName();
-        PixelPropsUtils.setProps(packageName);
+        AttestationHooks.setProps(context);
+        GamesPropsUtils.setProps(context);
+        PixelPropsUtils.setProps(context);
         return app;
     }
 
