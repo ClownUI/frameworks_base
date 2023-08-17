@@ -53,20 +53,6 @@
     <!-- Screen Record -->
     <dimen name="screenrecord_dot_size">48dp</dimen>
 
-    <!-- QS header image -->
-    <dimen name="qs_header_image_offset">0.01dp</dimen>
-    <dimen name="qs_header_image_side_margin">0dp</dimen>
-    <dimen name="qs_header_image_top_margin">0dp</dimen>
-    <dimen name="qs_header_image_bottom_margin">0dp</dimen>
-    <dimen name="evl_oplus13_top_view_measure_height">34.0dip</dimen>
-    <dimen name="evl_oplus13_qs_panel_margin_bottom">0.0dip</dimen>
-    <dimen name="evl_oplus13_qs_panel_margin_top">54.0dip</dimen>
-
-    <dimen name="ancient_header_img">200dp</dimen>
-    <dimen name="ancient_qs_total">150dp</dimen>
-    <dimen name="quick_qs_system_ancient">30dp</dimen>
-    <dimen name="ancient_qs_zero">0dp</dimen>
-    <dimen name="side_img">0dp</dimen>
-    <dimen name="ancient_header_small">80dp</dimen>
-    <dimen name="ancient_header_big">200dp</dimen>
+    <!-- QS Header height full -->
+    <dimen name="qs_header_height_full">200dp</dimen>
 </resources>

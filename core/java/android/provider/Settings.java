@@ -5728,6 +5728,12 @@ public final class Settings {
         public static final String QS_BATTERY_STYLE = "qs_battery_style";
 
         /**
+         * QS Header
+         * @hide
+         */
+        public static final String QS_HEADER_IMAGE = "qs_header_image";
+
+        /**
          * @hide
          */
         public static final String QS_SHOW_BATTERY_PERCENT = "qs_show_battery_percent";
