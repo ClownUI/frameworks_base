@@ -98,9 +98,6 @@
     <!-- Face Unlock -->
     <string name="face_unlock_recognizing">Recognizing face...</string>
 
-    <!-- VoLTE/VoWiFi -->
-    <string name="status_bar_ims">VoLTE/VoWiFi</string>
-
     <!-- Screen record -->
     <string name="screenrecord_stopdot_label">Show stop dot</string>
     <string name="screenrecord_stopdot_summary">Longpress to move it</string>
@@ -121,5 +118,5 @@
 
      <!-- Name of the clock in status bar [CHAR LIMIT=30] -->
     <string name="clock">Clock</string>
-    
+
 </resources>
