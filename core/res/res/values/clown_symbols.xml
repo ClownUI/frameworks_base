@@ -15,8 +15,6 @@
  * limitations under the License.
 -->
 <resources>
-    <!-- Device model (Build.MODEL) to spoof for netflix, if not empty -->
-    <java-symbol type="string" name="config_netflixSpoofModel" />
     
     <!-- Advanced reboot -->
     <java-symbol type="string" name="reboot_to_recovery_title" />
