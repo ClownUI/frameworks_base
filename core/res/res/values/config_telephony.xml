@@ -168,6 +168,10 @@
     <bool name="ignore_emergency_number_routing_from_db">false</bool>
     <java-symbol type="bool" name="ignore_emergency_number_routing_from_db" />
 
+    <!-- To disable the AOSP DSDA logic and use only QTI specific logic-->
+    <bool name="config_disable_aosp_dsda_logic">true</bool>
+    <java-symbol type="bool" name="config_disable_aosp_dsda_logic" />
+
     <!-- Boolean indicating whether allow sending null to modem to clear the previous initial attach
          data profile -->
     <bool name="allow_clear_initial_attach_data_profile">false</bool>
