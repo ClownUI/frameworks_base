@@ -131,6 +131,7 @@ public class A11yMenuOverlayLayout {
         if (mLayout != null) {
             lastVisibilityState = mLayout.getVisibility();
             mWindowManager.removeView(mLayout);
+            mLayout.setOnTouchListener(null);
             mLayout = null;
         }
 
