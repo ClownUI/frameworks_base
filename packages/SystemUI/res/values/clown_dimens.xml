@@ -22,4 +22,8 @@
 
     <!-- Screen Record -->
     <dimen name="screenrecord_dot_size">48dp</dimen>
+
+    <!-- Island notification -->
+    <dimen name="island_icon_size">48dp</dimen>
+    <dimen name="island_side_margin">12dp</dimen>
 </resources>

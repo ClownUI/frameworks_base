@@ -102,6 +102,9 @@ interface ShadeViewController {
     @Deprecated("This interface is deprecated in Scene Container")
     val shadeFoldAnimator: ShadeFoldAnimator
 
+    /** island visibility  */
+    fun showIsland(show: Boolean)
+    
     companion object {
         /**
          * Returns a multiplicative factor to use when determining the falsing threshold for touches
