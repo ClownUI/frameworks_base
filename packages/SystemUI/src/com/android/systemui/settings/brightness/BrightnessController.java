@@ -37,6 +37,7 @@ import android.os.RemoteException;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.os.Vibrator;
+import android.os.VibratorManager;
 import android.os.VibrationEffect;
 import android.provider.Settings;
 import android.service.vr.IVrManager;
@@ -114,9 +115,13 @@ public class BrightnessController implements ToggleSlider.Listener, MirroredBrig
 
     private ValueAnimator mSliderAnimator;
 
-    private Vibrator mVibrator;
+    private final boolean mHasVibrator;
+    private final Vibrator mVibrator;
+    private final VibratorManager mVibratorManager;
     private static final VibrationEffect BRIGHTNESS_SLIDER_HAPTIC =
-            VibrationEffect.get(VibrationEffect.EFFECT_TICK);
+            VibrationEffect.get(VibrationEffect.EFFECT_TEXTURE_TICK);
+
+    private static int mLastTrackingUpdate = 0;
 
     @Override
     public void setMirror(BrightnessMirrorController controller) {
@@ -336,10 +341,9 @@ public class BrightnessController implements ToggleSlider.Listener, MirroredBrig
         mAutomaticAvailable = context.getResources().getBoolean(
                 com.android.internal.R.bool.config_automatic_brightness_available);
 
-        mVibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
-        if (mVibrator == null || !mVibrator.hasVibrator()) {
-            mVibrator = null;
-        }
+        mVibratorManager = (VibratorManager) mContext.getSystemService(Context.VIBRATOR_MANAGER_SERVICE);
+        mVibrator = mVibratorManager.getDefaultVibrator();
+        mHasVibrator = mVibrator != null && mVibrator.hasVibrator();
 
         if (mIcon != null) {
             if (mAutomaticAvailable) {
@@ -401,8 +405,10 @@ public class BrightnessController implements ToggleSlider.Listener, MirroredBrig
         }
         setBrightness(valFloat);
 
-        // Give haptic feedback only if brightness is changed manually
-        if (tracking)
+        mLastTrackingUpdate = (mLastTrackingUpdate + 1) % 5;
+
+        // Give haptic feedback every 5 changes, only if brightness is changed manually
+        if (mHasVibrator && tracking && mLastTrackingUpdate == 0)
             mVibrator.vibrate(BRIGHTNESS_SLIDER_HAPTIC);
 
         if (!tracking) {
