@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2020-2023 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Advanced reboot -->
+    <string name="reboot_to_recovery_title">Mode Pemulihan</string>
+    <string name="reboot_to_recovery_message">Rebooting to recovery</string>
+    <string name="reboot_to_bootloader_title">Bootloader</string>
+    <string name="reboot_to_bootloader_message">Memulai ulang ke bootloader</string>
+    <string name="reboot_title">Mulai ulang</string>
+    <string name="reboot_message">Memulai ulang sistem</string>
+    <!-- Alert slider proc nodes paths. -->
+    <string name="alert_slider_state_path"></string>
+    <string name="alert_slider_uevent_match_path"></string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">Copy crash log URL</string>
+    <string name="url_copy_success">URL berhasil disalin</string>
+    <string name="url_copy_failed">Terjadi kesalahan saat mengunggah log ke Memochō</string>
+    <!-- Cycle through ringer modes -->
+    <string name="volume_dialog_ringer_guidance_normal">Panggilan dan notifikasi akan berdering</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Otomatis</string>
+    <string name="live_display_auto_summary">Secara otomatis menyesuaikan suhu warna layar setelah matahari terbenam dan matahari terbit</string>
+    <string name="live_display_off">Nonaktif</string>
+    <string name="live_display_off_summary">Nonaktifkan semua penyesuaian</string>
+    <string name="live_display_day">Siang</string>
+    <string name="live_display_day_summary">Gunakan setelan hanya pada siang hari</string>
+    <string name="live_display_night">Malam</string>
+    <string name="live_display_night_summary">Gunakan setelan hanya pada malam hari</string>
+    <string name="live_display_outdoor">Luar ruangan (matahari terang)</string>
+    <string name="live_display_outdoor_summary">Gunakan setelan luar ruangan saja</string>
+    <string name="live_display_hint">LiveDisplay dapat membantu mengurangi kelelahan mata dan membantu Anda tidur di malam hari. Klik di sini untuk mencobanya!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay nonaktif.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: mode otomatis.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: mode siang hari.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: mode malam hari.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: mode luar ruangan.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay dinonaktifkan.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay diubah menjadi mode otomatis.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay diubah ke mode siang hari.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay diubah ke mode malam hari.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay diubah menjadi mode luar ruangan.</string>
+    <!-- Health interface -->
+    <string name="charging_control_notification_channel">Kontrol pengisian daya</string>
+    <string name="charging_control_notification_title">Kontrol pengisian daya</string>
+    <string name="charging_control_notification_cancel_once">Batal</string>
+    <string name="charging_control_notification_content_limit">Baterai akan diisi daya hingga %1$d%%</string>
+    <string name="charging_control_notification_content_limit_reached">Baterai diisi daya hingga %1$d%%</string>
+    <string name="charging_control_notification_content_target">Baterai akan terisi penuh pada %1$s</string>
+    <string name="charging_control_notification_content_target_reached">Baterai terisi</string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Tekan dan tahan tombol daya untuk membuka kunci</string>
+</resources>

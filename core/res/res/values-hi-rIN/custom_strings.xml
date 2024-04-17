@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2020-2023 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Advanced reboot -->
+    <string name="reboot_to_recovery_title">Recovery</string>
+    <string name="reboot_to_recovery_message">रिकवरी पर रिबूट हो रहा है</string>
+    <string name="reboot_to_bootloader_title">Bootloader</string>
+    <string name="reboot_to_bootloader_message">बूटलोडर पर रिबूट हो रहा है</string>
+    <string name="reboot_title">रिबूट</string>
+    <string name="reboot_message">सिस्टम को रिबूट हो रहा है</string>
+    <!-- Alert slider proc nodes paths. -->
+    <string name="alert_slider_state_path"></string>
+    <string name="alert_slider_uevent_match_path"></string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">क्रैश लॉग के URL को कॉपी करें</string>
+    <string name="url_copy_success">URL सफलतापूर्वक कॉपी हो गया</string>
+    <string name="url_copy_failed">लॉग को अपलोड करने में कोई मुश्किल हो गई</string>
+    <!-- Cycle through ringer modes -->
+    <string name="volume_dialog_ringer_guidance_normal">Calls and notifications will ring</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">स्वचालित</string>
+    <string name="live_display_auto_summary">स्क्रीन के रंग का तापमान अपने आप एडजस्ट करे</string>
+    <string name="live_display_off">Off</string>
+    <string name="live_display_off_summary">सभी सुधार को बंद करें</string>
+    <string name="live_display_day">Day</string>
+    <string name="live_display_day_summary">दिन के सेटिंग्स का ही प्रयोग करे</string>
+    <string name="live_display_night">Night</string>
+    <string name="live_display_night_summary">रात के सेटिंग्स का ही प्रयोग करे</string>
+    <string name="live_display_outdoor">बाहर (तेज़ धूप)</string>
+    <string name="live_display_outdoor_summary">बाहर के सेटिंग्स का ही प्रयोग करे</string>
+    <string name="live_display_hint">LiveDisplay आंख पर पड़ने वाले ज़ोर को कम करके आपकी नींद को सुधार सकता है। आजमाने के लिए यहां दबाएं!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay बंद है</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: स्वचालित मोड</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: दिन मोड</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: रात मोड</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: बाहरी मोड</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay बंद है।</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay को स्वचालित मोड में बदल दिया गया है।</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay को दिन मोड में बदल दिया गया है।</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay को रात मोड में बदल दिया गया है।</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay को बाहरी मोड में बदल दिया गया है।</string>
+    <!-- Health interface -->
+    <string name="charging_control_notification_channel">चार्जिंग का नियंत्रण</string>
+    <string name="charging_control_notification_title">चार्जिंग का नियंत्रण</string>
+    <string name="charging_control_notification_cancel_once">मना करें</string>
+    <string name="charging_control_notification_content_limit">बैटरी को %1$d%% तक चार्ज किया जायेगा</string>
+    <string name="charging_control_notification_content_limit_reached">बैटरी %1$d%% तक चार्ज हो गया</string>
+    <string name="charging_control_notification_content_target">बैटरी %1$s को पूरी तरह चार्ज हो जायेगा</string>
+    <string name="charging_control_notification_content_target_reached">बैटरी चार्ज हो गया</string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">अनलॉक करने के लिए पावर बटन दबाए रखें</string>
+</resources>

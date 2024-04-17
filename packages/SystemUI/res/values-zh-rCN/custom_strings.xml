@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">切换数据卡</string>
+    <string name="qs_data_switch_toast_0">当前无 SIM 卡插入</string>
+    <string name="qs_data_switch_toast_1">当前仅插入了一张 SIM 卡</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">已将移动数据卡切换到 SIM 卡 1</string>
+    <string name="qs_data_switch_changed_2">已将移动数据卡切换到 SIM 卡 2</string>
+    <!-- Caffeine tile -->
+    <string name="quick_settings_caffeine_label">咖啡因</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">浮动通知</string>
+    <string name="accessibility_quick_settings_heads_up_off">浮动通知 关闭。</string>
+    <string name="accessibility_quick_settings_heads_up_on">浮动通知 开启。</string>
+    <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
+    <plurals name="quick_settings_internet_hotspot_summary_num_devices">
+        <item quantity="other">已连接 %d 台设备</item>
+    </plurals>
+    <!-- Advanced Reboot -->
+    <string name="global_action_restart_advanced">高级重启</string>
+    <string name="global_action_restart_recovery">Recovery</string>
+    <string name="global_action_restart_bootloader">Bootloader</string>
+    <string name="global_action_restart_ui">系统界面</string>
+</resources>

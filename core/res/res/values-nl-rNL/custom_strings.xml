@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2020-2023 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Advanced reboot -->
+    <string name="reboot_to_recovery_title">Herstel</string>
+    <string name="reboot_to_recovery_message">Herstarten naar herstelmodus</string>
+    <string name="reboot_to_bootloader_title">Bootloader</string>
+    <string name="reboot_to_bootloader_message">Herstarten naar bootloader</string>
+    <string name="reboot_title">Herstarten</string>
+    <string name="reboot_message">Systeem herstarten</string>
+    <!-- Alert slider proc nodes paths. -->
+    <string name="alert_slider_state_path"></string>
+    <string name="alert_slider_uevent_match_path"></string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">Kopieer crash log URL</string>
+    <string name="url_copy_success">URL succesvol gekopieerd</string>
+    <string name="url_copy_failed">Er is een fout opgetreden tijdens het uploaden van de log naar Memochō</string>
+    <!-- Cycle through ringer modes -->
+    <string name="volume_dialog_ringer_guidance_normal">Oproepen en meldingen zullen overgaan</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Automatisch</string>
+    <string name="live_display_auto_summary">Kleurtemperatuur van scherm automatisch aanpassen na zonsondergang en zonsopgang</string>
+    <string name="live_display_off">Off</string>
+    <string name="live_display_off_summary">Alle wijzigingen uitschakelen</string>
+    <string name="live_display_day">Day</string>
+    <string name="live_display_day_summary">Gebruik alleen daginstellingen</string>
+    <string name="live_display_night">Night</string>
+    <string name="live_display_night_summary">Gebruik alleen nachtinstellingen</string>
+    <string name="live_display_outdoor">Buiten (felle zon)</string>
+    <string name="live_display_outdoor_summary">Alleen instellingen voor buitenshuis gebruiken</string>
+    <string name="live_display_hint">LiveDisplay kan oogvermoeidheid verminderen en helpt u om \'s nachts te slapen. Klik hier om het uit te proberen!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay uit.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: automatische modus.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: dagstand.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: nachtmodus.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: buiten modus.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay uitgeschakeld.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay gewijzigd naar automatische modus.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay gewijzigd naar dagstand.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay gewijzigd naar nachtstand.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay gewijzigd naar buiten modus.</string>
+    <!-- Health interface -->
+    <string name="charging_control_notification_channel">Oplaad controle</string>
+    <string name="charging_control_notification_title">Oplaad controle</string>
+    <string name="charging_control_notification_cancel_once">Annuleren</string>
+    <string name="charging_control_notification_content_limit">Batterij wordt tot %1$d%% opgeladen</string>
+    <string name="charging_control_notification_content_limit_reached">Batterij is opgeladen tot %1$d%%</string>
+    <string name="charging_control_notification_content_target">De batterij zal volledig zijn opgeladen bij %1$s</string>
+    <string name="charging_control_notification_content_target_reached">Batterij is opgeladen</string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Houd de aan/uit- knop ingedrukt om te ontgrendelen</string>
+</resources>

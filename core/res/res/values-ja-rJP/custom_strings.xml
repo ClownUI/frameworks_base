@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2020-2023 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Advanced reboot -->
+    <string name="reboot_to_recovery_title">リカバリー</string>
+    <string name="reboot_to_recovery_message">リカバリーへ再起動</string>
+    <string name="reboot_to_bootloader_title">ブートローダー</string>
+    <string name="reboot_to_bootloader_message">ブートローダーへ再起動</string>
+    <string name="reboot_title">再起動</string>
+    <string name="reboot_message">システムを再起動中...</string>
+    <!-- Alert slider proc nodes paths. -->
+    <string name="alert_slider_state_path"></string>
+    <string name="alert_slider_uevent_match_path"></string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">クラッシュログ URL をコピーする</string>
+    <string name="url_copy_success">URLがコピーされた</string>
+    <string name="url_copy_failed">メモ帳へのログのアップロード中にエラーが発生しました</string>
+    <!-- Cycle through ringer modes -->
+    <string name="volume_dialog_ringer_guidance_normal">通話と通知を着信します</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">自動</string>
+    <string name="live_display_auto_summary">日の出と日の入り後の画面の色温度を自動的に調整する</string>
+    <string name="live_display_off">Off</string>
+    <string name="live_display_off_summary">全ての調整を無効にする</string>
+    <string name="live_display_day">昼</string>
+    <string name="live_display_day_summary">日中の設定のみ使用</string>
+    <string name="live_display_night">夜間</string>
+    <string name="live_display_night_summary">夜間の設定のみ使用</string>
+    <string name="live_display_outdoor">屋外 (日光)</string>
+    <string name="live_display_outdoor_summary">屋外の設定のみを使用</string>
+    <string name="live_display_hint">LiveDisplayは目の疲れを軽減し、夜の睡眠を邪魔しません。ここをタップして試してみて下さい。</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay OFF</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: 自動モード</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: 日中モード</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: 夜間モード</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: 屋外モード</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay を OFF にしました</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay を自動モードに変更しました</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay を日中モードに変更しました</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay を夜間モードに変更しました</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay を屋外モードに変更しました</string>
+    <!-- Health interface -->
+    <string name="charging_control_notification_channel">充電コントロール</string>
+    <string name="charging_control_notification_title">充電コントロール</string>
+    <string name="charging_control_notification_cancel_once">キャンセル</string>
+    <string name="charging_control_notification_content_limit">バッテリーは %1$d%% まで充電されます</string>
+    <string name="charging_control_notification_content_limit_reached">バッテリーは %1$d%% まで充電されています</string>
+    <string name="charging_control_notification_content_target">バッテリーは %1$s に完全に充電されます</string>
+    <string name="charging_control_notification_content_target_reached">バッテリーを充電しました</string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">電源ボタンを長押しするとロックを解除します</string>
+</resources>

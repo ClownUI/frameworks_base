@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">ডাটা কার্ড পরিবর্তন</string>
+    <string name="qs_data_switch_toast_0">বর্তমানে ফোনে কোন সিম কার্ড নেই</string>
+    <string name="qs_data_switch_toast_1">বর্তমানে ফোনে একটি সিম কার্ড প্রবেশ করানো আছে</string>
+    <string name="qs_data_switch_text_1">সিম ১</string>
+    <string name="qs_data_switch_text_2">সিম ২</string>
+    <string name="qs_data_switch_changed_1">ডেটা কার্ড সিম ১ এ নিয়োজিত হয়েছে.</string>
+    <string name="qs_data_switch_changed_2">ডেটা মোড সিম ২ তে নিয়োজিত হয়েছে.</string>
+    <!-- Caffeine tile -->
+    <string name="quick_settings_caffeine_label">ক্যাফেইন</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">হেডস আপ</string>
+    <string name="accessibility_quick_settings_heads_up_off">হেডস আপ বন্ধ</string>
+    <string name="accessibility_quick_settings_heads_up_on">হেডস আপ চালু</string>
+    <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
+    <plurals name="quick_settings_internet_hotspot_summary_num_devices">
+        <item quantity="one">%d টি ডিভাইস সংযুক্ত</item>
+        <item quantity="other">%d টি ডিভাইস সংযুক্ত</item>
+    </plurals>
+    <!-- Advanced Reboot -->
+    <string name="global_action_restart_advanced">বিস্তারিত</string>
+    <string name="global_action_restart_recovery">পুনরুদ্ধার</string>
+    <string name="global_action_restart_bootloader">বুটলোডার</string>
+    <string name="global_action_restart_ui">সিস্টেম UI</string>
+</resources>

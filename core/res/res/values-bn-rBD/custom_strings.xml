@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2020-2023 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Advanced reboot -->
+    <string name="reboot_to_recovery_title">রিকভারি</string>
+    <string name="reboot_to_recovery_message">রিকভারিতে রিবুট করুন</string>
+    <string name="reboot_to_bootloader_title">বুটলোডার</string>
+    <string name="reboot_to_bootloader_message">বুটলোডারে রিবুট করা হচ্ছে</string>
+    <string name="reboot_title">রিবুট করুন</string>
+    <string name="reboot_message">সিস্টেম পুনরায় চালু হচ্ছে</string>
+    <!-- Alert slider proc nodes paths. -->
+    <string name="alert_slider_state_path"></string>
+    <string name="alert_slider_uevent_match_path"></string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">ক্রেস লগ ইউ আর এল নকল করুন</string>
+    <string name="url_copy_success">URL সফলভাবে নকল করা হয়েছে</string>
+    <string name="url_copy_failed">্মেমোচোতে লগ আপলোড করার সময় একটি ত্রুটি ঘটেছে</string>
+    <!-- Cycle through ringer modes -->
+    <string name="volume_dialog_ringer_guidance_normal">কল এবং বিজ্ঞপ্তি রিং হবে</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">স্বয়ংক্রিয়</string>
+    <string name="live_display_auto_summary">সূর্যাস্ত এবং সূর্যোদয়ের পরে স্বয়ংক্রিয়ভাবে পর্দার রঙের তাপমাত্রা সামঞ্জস্য করুন</string>
+    <string name="live_display_off">বন্ধ</string>
+    <string name="live_display_off_summary">সকল পরিবর্তন বন্ধ করুন</string>
+    <string name="live_display_day">দিন</string>
+    <string name="live_display_day_summary">শুধুমাত্র দিনের সেটিংস ব্যবহার করুন</string>
+    <string name="live_display_night">রাত</string>
+    <string name="live_display_night_summary">শুধুমাত্র রাতের সেটিংস ব্যবহার করুন</string>
+    <string name="live_display_outdoor">আউটডোর (উজ্জ্বল সূর্য)</string>
+    <string name="live_display_outdoor_summary">শুধুমাত্র আউটডোর সেটিংস ব্যবহার করুন</string>
+    <string name="live_display_hint">লাইভডিসপ্লে চোখের চাপ কমাতে এবং রাতে ঘুমাতে সাহায্য করতে পারে। এটা ব্যবহার করতে এখানে ক্লিক করুন!</string>
+    <string name="accessibility_quick_settings_live_display_off">লাইভ ডিসপ্লে বন্ধ.</string>
+    <string name="accessibility_quick_settings_live_display_auto">লাইভ ডিসপ্লে: অটো মোড।.</string>
+    <string name="accessibility_quick_settings_live_display_day">লাইভ ডিসপ্লে: ডে মোড।.</string>
+    <string name="accessibility_quick_settings_live_display_night">লাইভ ডিসপ্লে: নাইট মোড।.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">লাইভ ডিসপ্লে: আউটডোর মোড।লাইভ ডিসপ্লে: আউটডোর মোড।.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">লাইভ ডিসপ্লে বন্ধ করা হয়েছে।.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">লাইভ ডিসপ্লে স্বয়ংক্রিয় মোডে পরিবর্তিত হয়েছে।.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">লাইভ ডিসপ্লে দিন মোডে পরিবর্তিত হয়েছে।</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">লাইভ ডিসপ্লে নাইট মোডে পরিবর্তিত হয়েছে।</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">\'লাইভডিসপ্লে\' স্বয়ংক্রিয় অবস্থায় পরিবর্তন হয়েছে।.</string>
+    <!-- Health interface -->
+    <string name="charging_control_notification_channel">চার্জিং নিয়ন্ত্রণ</string>
+    <string name="charging_control_notification_title">চার্জিং নিয়ন্ত্রণ</string>
+    <string name="charging_control_notification_cancel_once">বাতিল করুন</string>
+    <string name="charging_control_notification_content_limit">ব্যাটারি চার্জ করা হবে %1$d%%</string>
+    <string name="charging_control_notification_content_limit_reached">ব্যাটারি চার্জ করা হয়েছে %1$d%%</string>
+    <string name="charging_control_notification_content_target">ব্যাটারি %1$s এ সম্পূর্ণ চার্জ হবে</string>
+    <string name="charging_control_notification_content_target_reached">ব্যাটারি চার্জ করা হয়েছে</string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">আনলক করতে পাওয়ার বাটন টিপে ধরে রাখুন</string>
+</resources>

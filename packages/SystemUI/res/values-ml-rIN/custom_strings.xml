@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">ഡാറ്റാ കാർഡ് സ്വിച്ച് ചെയ്യുക</string>
+    <string name="qs_data_switch_toast_0">നിലവിൽ ഒരു സിം കാർഡും ഇട്ടിട്ടില്ല</string>
+    <string name="qs_data_switch_toast_1">നിലവിൽ ഒരു സിം കാർഡ് മാത്രമേ ഇട്ടിട്ടുള്ളു</string>
+    <string name="qs_data_switch_text_1">സിം 1</string>
+    <string name="qs_data_switch_text_2">സിം 2</string>
+    <string name="qs_data_switch_changed_1">ഡാറ്റ കാർഡ് സിം 1-ലേക്ക് മാറ്റി.</string>
+    <string name="qs_data_switch_changed_2">ഡാറ്റ കാർഡ് സിം 2-ലേക്ക് മാറ്റി.</string>
+    <!-- Caffeine tile -->
+    <string name="quick_settings_caffeine_label">കഫീൻ</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">മുന്നറിയിപ്പ്</string>
+    <string name="accessibility_quick_settings_heads_up_off">മുണറിയിപ് ഓഫ്.</string>
+    <string name="accessibility_quick_settings_heads_up_on">മുണറിയിപ് ഓൺ.</string>
+    <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
+    <plurals name="quick_settings_internet_hotspot_summary_num_devices">
+        <item quantity="one">%d device connected</item>
+        <item quantity="other">%d devices connected</item>
+    </plurals>
+    <!-- Advanced Reboot -->
+    <string name="global_action_restart_advanced">Advanced</string>
+    <string name="global_action_restart_recovery">Recovery</string>
+    <string name="global_action_restart_bootloader">Bootloader</string>
+    <string name="global_action_restart_ui">SystemUI</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2020-2023 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Advanced reboot -->
+    <string name="reboot_to_recovery_title">Recovery</string>
+    <string name="reboot_to_recovery_message">Перазагрузка ў рэжым аднаўлення</string>
+    <string name="reboot_to_bootloader_title">Bootloader</string>
+    <string name="reboot_to_bootloader_message">Перазагрузка ў загрузчык</string>
+    <string name="reboot_title">Перазагрузка</string>
+    <string name="reboot_message">Перазагрузка сістэмы</string>
+    <!-- Alert slider proc nodes paths. -->
+    <string name="alert_slider_state_path"></string>
+    <string name="alert_slider_uevent_match_path"></string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">Капіраваць спасылку журнала памылак</string>
+    <string name="url_copy_success">Спасылка паспяхова скапіравана</string>
+    <string name="url_copy_failed">Падчас загрузкі журнала на сэрвіс Memochō адбылася памылка</string>
+    <!-- Cycle through ringer modes -->
+    <string name="volume_dialog_ringer_guidance_normal">Calls and notifications will ring</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Аўтаматычна</string>
+    <string name="live_display_auto_summary">Аўтаматычна рэгуляваць тэмпературу колеру экрана пасля заходу і ўсходу сонца</string>
+    <string name="live_display_off">Off</string>
+    <string name="live_display_off_summary">Адключыць усе налады</string>
+    <string name="live_display_day">Day</string>
+    <string name="live_display_day_summary">Выкарыстоўваць толькі дзённыя параметры</string>
+    <string name="live_display_night">Night</string>
+    <string name="live_display_night_summary">Выкарыстоўваць толькі начныя параметры</string>
+    <string name="live_display_outdoor">На вуліцы (яркае сонца)</string>
+    <string name="live_display_outdoor_summary">Выкарыстоўваць толькі параметры вуліцы</string>
+    <string name="live_display_hint">LiveDisplay дапамагае знізіць напружанне вачэй і паляпшае начны сон. Націсніце тут, каб паспрабаваць!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay выключаны.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: аўтаматычны рэжым.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: дзённы рэжым.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: начны рэжым.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: рэжым вуліцы.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay адключаны.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay зменены на аўтаматычны рэжым.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay пераключаны ў дзённы рэжым.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay пераключаны ў начны рэжым.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay пераключаны ў вулiчны рэжым.</string>
+    <!-- Health interface -->
+    <string name="charging_control_notification_channel">Кіраванне зарадкай</string>
+    <string name="charging_control_notification_title">Кіраванне зарадкай</string>
+    <string name="charging_control_notification_cancel_once">Скасаваць</string>
+    <string name="charging_control_notification_content_limit">Акумулятар будзе зараджаны да %1$d%%</string>
+    <string name="charging_control_notification_content_limit_reached">Акумулятар зараджаны да %1$d%%</string>
+    <string name="charging_control_notification_content_target">Акумулятар цалкам зараджаны ў %1$s</string>
+    <string name="charging_control_notification_content_target_reached">Акумулятар зараджаны да</string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Націсніце і ўтрымлівайце кнопку сілкавання, каб разблакаваць</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2020-2023 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Advanced reboot -->
+    <string name="reboot_to_recovery_title">Recovery-tila</string>
+    <string name="reboot_to_recovery_message">Uudelleenkäynnistetään recovery-tilaan</string>
+    <string name="reboot_to_bootloader_title">Bootloader-tila</string>
+    <string name="reboot_to_bootloader_message">Uudelleenkäynnistetään bootloader-tilaan</string>
+    <string name="reboot_title">Käynnistä uudelleen</string>
+    <string name="reboot_message">Uudelleenkäynnistetään järjestelmää</string>
+    <!-- Alert slider proc nodes paths. -->
+    <string name="alert_slider_state_path"></string>
+    <string name="alert_slider_uevent_match_path"></string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">Copy crash log URL</string>
+    <string name="url_copy_success">URL-osoite kopioitu onnistuneesti</string>
+    <string name="url_copy_failed">An error occured while uploading the log to Memochō</string>
+    <!-- Cycle through ringer modes -->
+    <string name="volume_dialog_ringer_guidance_normal">Puhelut ja ilmoitukset soivat</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Automaattinen</string>
+    <string name="live_display_auto_summary">Säädä näytön väri automaattisesti auringonlaskun ja nousun mukaan</string>
+    <string name="live_display_off">Pois Päältä</string>
+    <string name="live_display_off_summary">Poista kaikki säädöt käytöstä</string>
+    <string name="live_display_day">Päivä</string>
+    <string name="live_display_day_summary">Käytä vain päiväasetusta</string>
+    <string name="live_display_night">Yö</string>
+    <string name="live_display_night_summary">Käytä vain yöasetusta</string>
+    <string name="live_display_outdoor">Ulkoilma (kirkas aurinko)</string>
+    <string name="live_display_outdoor_summary">Käytä vain ulkoilma-asetuksia</string>
+    <string name="live_display_hint">LiveDisplay voi vähentää silmien rasitusta ja auttaa nukkumaan öisin. Kokeile sitä painamalla tästä!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay pois päältä.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: Automaattinen.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: päivä-tila.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: yö-tila.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: ulkoilmatila.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay pois päältä.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay muutettiin automaattitilaan.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay muutettiin päivä-tilaan.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay muutettiin Yö-tilaan.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay muutettiin ulkoilmatilaan.</string>
+    <!-- Health interface -->
+    <string name="charging_control_notification_channel">Latauksen säätö</string>
+    <string name="charging_control_notification_title">Latauksen säätö</string>
+    <string name="charging_control_notification_cancel_once">Peruuta</string>
+    <string name="charging_control_notification_content_limit">Akku ladataan %1$d%%</string>
+    <string name="charging_control_notification_content_limit_reached">Akkua on ladattu %1$d%%</string>
+    <string name="charging_control_notification_content_target">Akku ladataan %1$s</string>
+    <string name="charging_control_notification_content_target_reached">Akku on ladattu</string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Avaa lukitus pitämällä virtapainiketta pohjassa</string>
+</resources>

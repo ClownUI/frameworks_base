@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2020-2023 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Advanced reboot -->
+    <string name="reboot_to_recovery_title">Återställning</string>
+    <string name="reboot_to_recovery_message">Startar om till återställningsläge</string>
+    <string name="reboot_to_bootloader_title">Starthanterare</string>
+    <string name="reboot_to_bootloader_message">Startar om till starthanterare</string>
+    <string name="reboot_title">Starta om</string>
+    <string name="reboot_message">Startar om</string>
+    <!-- Alert slider proc nodes paths. -->
+    <string name="alert_slider_state_path"></string>
+    <string name="alert_slider_uevent_match_path"></string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">Kopiera URL för kraschlogg</string>
+    <string name="url_copy_success">URL kopierad</string>
+    <string name="url_copy_failed">Ett fel inträffade vid uppladdning av loggen till Memochō</string>
+    <!-- Cycle through ringer modes -->
+    <string name="volume_dialog_ringer_guidance_normal">Ring vid samtal och aviseringar</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Automatisk</string>
+    <string name="live_display_auto_summary">Justera automatiskt skärmens färgtemperatur efter solnedgång och soluppgång</string>
+    <string name="live_display_off">Av</string>
+    <string name="live_display_off_summary">Inaktivera alla justeringar</string>
+    <string name="live_display_day">Dag</string>
+    <string name="live_display_day_summary">Använd enbart dagläge</string>
+    <string name="live_display_night">Natt</string>
+    <string name="live_display_night_summary">Använd endast nattinställningar</string>
+    <string name="live_display_outdoor">Utomhus (stark sol)</string>
+    <string name="live_display_outdoor_summary">Använd endast utomhusinställningar</string>
+    <string name="live_display_hint">LiveDisplay kan minska överansträngning av ögonen och hjälpa dig med nattsömnen. Klicka här för att prova!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay av.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: automatiskt läge.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: dagläge.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: nattläge.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: utomhusläge.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay har inaktiverats.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay ändrades till automatiskt läge.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay ändrat till dagläge.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay ändrad till nattläge.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay ändrad till utomhusläge.</string>
+    <!-- Health interface -->
+    <string name="charging_control_notification_channel">Laddningskontroll</string>
+    <string name="charging_control_notification_title">Laddningskontroll</string>
+    <string name="charging_control_notification_cancel_once">Avbryt</string>
+    <string name="charging_control_notification_content_limit">Batteriet kommer att laddas till %1$d%%</string>
+    <string name="charging_control_notification_content_limit_reached">Batteriet är laddat till %1$d%%</string>
+    <string name="charging_control_notification_content_target">Batteriet kommer att vara fulladdat vid %1$s</string>
+    <string name="charging_control_notification_content_target_reached">Batteriet är fulladdat</string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Tryck och håll in avstängningsknappen för att låsa upp</string>
+</resources>

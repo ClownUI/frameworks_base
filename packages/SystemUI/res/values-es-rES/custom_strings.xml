@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Cambiar SIM para datos</string>
+    <string name="qs_data_switch_toast_0">No se ha insertado ninguna tarjeta SIM</string>
+    <string name="qs_data_switch_toast_1">Solo se ha insertado una tarjeta SIM</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Usando SIM 1 para datos móviles.</string>
+    <string name="qs_data_switch_changed_2">Usando SIM 2 para datos móviles.</string>
+    <!-- Caffeine tile -->
+    <string name="quick_settings_caffeine_label">Modo cafeína</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Notificaciones emergentes</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notificaciones emergentes desactivadas.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notificaciones emergentes activadas.</string>
+    <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
+    <plurals name="quick_settings_internet_hotspot_summary_num_devices">
+        <item quantity="one">%d dispositivo conectado</item>
+        <item quantity="other">%d dispositivos conectados</item>
+    </plurals>
+    <!-- Advanced Reboot -->
+    <string name="global_action_restart_advanced">Avanzado</string>
+    <string name="global_action_restart_recovery">Modo Recovery</string>
+    <string name="global_action_restart_bootloader">Modo Bootloader</string>
+    <string name="global_action_restart_ui">Interfaz de sistema</string>
+</resources>

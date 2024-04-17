@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2020-2023 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Advanced reboot -->
+    <string name="reboot_to_recovery_title">Tryb recovery</string>
+    <string name="reboot_to_recovery_message">Uruchamiam ponownie do trybu recovery</string>
+    <string name="reboot_to_bootloader_title">Restart do trybu bootloader\'a</string>
+    <string name="reboot_to_bootloader_message">Uruchamiam ponownie do trybu bootloader</string>
+    <string name="reboot_title">Uruchom ponownie</string>
+    <string name="reboot_message">Ponowne uruchamianie</string>
+    <!-- Alert slider proc nodes paths. -->
+    <string name="alert_slider_state_path"></string>
+    <string name="alert_slider_uevent_match_path"></string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">Skopiuj log URL awarii</string>
+    <string name="url_copy_success">URL skopiowany pomyślnie</string>
+    <string name="url_copy_failed">Wystąpił błąd podczas przesyłania logów do Memocho</string>
+    <!-- Cycle through ringer modes -->
+    <string name="volume_dialog_ringer_guidance_normal">Połączenia i powiadomienia użyją dzwonka</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Automatyczne</string>
+    <string name="live_display_auto_summary">Automatycznie dostosuj temperaturę kolorów ekranu po zachodzie i wschodzie słońca</string>
+    <string name="live_display_off">Wyłączone</string>
+    <string name="live_display_off_summary">Wyłącz wszystkie zmiany</string>
+    <string name="live_display_day">Dzień</string>
+    <string name="live_display_day_summary">Użyj wyłącznie ustawień dziennych</string>
+    <string name="live_display_night">Noc</string>
+    <string name="live_display_night_summary">Użyj wyłącznie ustawień nocnych</string>
+    <string name="live_display_outdoor">Na zewnątrz (jasne światło)</string>
+    <string name="live_display_outdoor_summary">Używaj ustawień tylko na zewnątrz</string>
+    <string name="live_display_hint">NaZewnątrz może zredukować zmęczenie oczu oraz może pomóc zasnąć w nocy. Kliknij aby wypróbować!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay wył.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: tryb automatyczny.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: tryb dzienny.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: tryb nocny.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: tryb na zewnątrz.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">Wyłączono LiveDisplay.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay zmieniony na tryb automatyczny.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">Na zewnątrz zmieniony na tryb dzienny.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay zmieniony na tryb nocny.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay zmieniony na tryb na zewnątrz.</string>
+    <!-- Health interface -->
+    <string name="charging_control_notification_channel">Kontrola ładowania</string>
+    <string name="charging_control_notification_title">Kontrola ładowania</string>
+    <string name="charging_control_notification_cancel_once">Anuluj</string>
+    <string name="charging_control_notification_content_limit">Bateria jest naładowana w %1$d%%</string>
+    <string name="charging_control_notification_content_limit_reached">Bateria jest naładowana w %1$d%%</string>
+    <string name="charging_control_notification_content_target">Bateria zostanie w pełni naładowana przy %1$s</string>
+    <string name="charging_control_notification_content_target_reached">Bateria jest naładowana</string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Naciśnij i przytrzymaj przycisk zasilania, aby odblokować</string>
+</resources>

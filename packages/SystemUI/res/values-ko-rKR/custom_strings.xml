@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">데이터 전용 SIM 카드 전환</string>
+    <string name="qs_data_switch_toast_0">현재 SIM 카드가 삽입되어 있지 않습니다.</string>
+    <string name="qs_data_switch_toast_1">현재 하나의 SIM 카드만 삽입되어 있습니다.</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">데이터 전용 SIM 카드를 SIM 1으로 전환</string>
+    <string name="qs_data_switch_changed_2">데이터 전용 SIM 카드를 SIM 2로 전환</string>
+    <!-- Caffeine tile -->
+    <string name="quick_settings_caffeine_label">화면 계속 켜기</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">화면 상단 알림</string>
+    <string name="accessibility_quick_settings_heads_up_off">화면 상단 알림 꺼짐</string>
+    <string name="accessibility_quick_settings_heads_up_on">화면 상단 알림 켜짐</string>
+    <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
+    <plurals name="quick_settings_internet_hotspot_summary_num_devices">
+        <item quantity="other">%d개 장치 연결됨</item>
+    </plurals>
+    <!-- Advanced Reboot -->
+    <string name="global_action_restart_advanced">고급 설정</string>
+    <string name="global_action_restart_recovery">리커버리</string>
+    <string name="global_action_restart_bootloader">부트로더</string>
+    <string name="global_action_restart_ui">시스템UI</string>
+</resources>

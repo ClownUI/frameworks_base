@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2020-2023 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Advanced reboot -->
+    <string name="reboot_to_recovery_title">Recuperare</string>
+    <string name="reboot_to_recovery_message">Repornire în recuperare</string>
+    <string name="reboot_to_bootloader_title">Bootloader</string>
+    <string name="reboot_to_bootloader_message">Repornire în bootloader</string>
+    <string name="reboot_title">Repornește</string>
+    <string name="reboot_message">Repornește sistemul</string>
+    <!-- Alert slider proc nodes paths. -->
+    <string name="alert_slider_state_path"></string>
+    <string name="alert_slider_uevent_match_path"></string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">Copiază URL-ul jurnalului de erori</string>
+    <string name="url_copy_success">URL copiat cu succes</string>
+    <string name="url_copy_failed">A apărut o eroare la încărcarea jurnalului în Memochō</string>
+    <!-- Cycle through ringer modes -->
+    <string name="volume_dialog_ringer_guidance_normal">Apelurile și notificările vor suna</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Automat</string>
+    <string name="live_display_auto_summary">Reglează automat temperatura culorii ecranului în funcție de apus și răsărit</string>
+    <string name="live_display_off">Oprită</string>
+    <string name="live_display_off_summary">Dezactivează toate ajustările</string>
+    <string name="live_display_day">Zi</string>
+    <string name="live_display_day_summary">Folosește doar setările de zi</string>
+    <string name="live_display_night">Noapte</string>
+    <string name="live_display_night_summary">Folosește numai setările de noapte</string>
+    <string name="live_display_outdoor">Exterior (soare puternic)</string>
+    <string name="live_display_outdoor_summary">Folosește doar setările de exterior</string>
+    <string name="live_display_hint">LiveDisplay poate ajuta la reducerea oboselii ochilor și te poate ajuta să dormi noaptea. Apasă aici pentru a-l încerca!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay este dezactivat.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: mod automat.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: modul zi.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: modul noapte.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: modul exterior.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay este oprit.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay s-a schimbat la modul automat.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay s-a schimbat la modul zi.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay s-a schimbat la modul noapte.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay s-a schimbat la modul exterior.</string>
+    <!-- Health interface -->
+    <string name="charging_control_notification_channel">Control încărcare</string>
+    <string name="charging_control_notification_title">Control încărcare</string>
+    <string name="charging_control_notification_cancel_once">Anulare</string>
+    <string name="charging_control_notification_content_limit">Bateria va fi încărcată la %1$d%%</string>
+    <string name="charging_control_notification_content_limit_reached">Bateria este încărcată la %1$d%%</string>
+    <string name="charging_control_notification_content_target">Bateria va fi încărcată complet la %1$s</string>
+    <string name="charging_control_notification_content_target_reached">Bateria este încărcată</string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Apasă și ține apăsat butonul de pornire pentru a debloca</string>
+</resources>

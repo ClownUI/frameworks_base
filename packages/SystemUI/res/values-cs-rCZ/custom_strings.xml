@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Přepnout datovou SIM kartu</string>
+    <string name="qs_data_switch_toast_0">Momentálně není vložena žádná SIM karta</string>
+    <string name="qs_data_switch_toast_1">Momentálně je vložena pouze jedna SIM karta</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Přepnout datovou kartu na SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Přepnout datovou kartu na SIM 2.</string>
+    <!-- Caffeine tile -->
+    <string name="quick_settings_caffeine_label">Kofein</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Plovoucí oznámení</string>
+    <string name="accessibility_quick_settings_heads_up_off">Plovoucí oznámení vyp.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Plovoucí oznámení zap.</string>
+    <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
+    <plurals name="quick_settings_internet_hotspot_summary_num_devices">
+        <item quantity="one">%d device connected</item>
+        <item quantity="few">%d devices connected</item>
+        <item quantity="many">%d devices connected</item>
+        <item quantity="other">%d devices connected</item>
+    </plurals>
+    <!-- Advanced Reboot -->
+    <string name="global_action_restart_advanced">Pokročilé</string>
+    <string name="global_action_restart_recovery">Obnovení</string>
+    <string name="global_action_restart_bootloader">Bootloader</string>
+    <string name="global_action_restart_ui">SystemUI</string>
+</resources>

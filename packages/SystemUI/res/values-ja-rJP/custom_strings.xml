@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">データ SIM の変更</string>
+    <string name="qs_data_switch_toast_0">現在 SIM カードは挿入されていません</string>
+    <string name="qs_data_switch_toast_1">現在1枚のみ SIM カードが挿入されています</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">SIM 1 をデータ通信に使用します</string>
+    <string name="qs_data_switch_changed_2">SIM 2 をデータ通信に使用します</string>
+    <!-- Caffeine tile -->
+    <string name="quick_settings_caffeine_label">Caffeine</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Heads up</string>
+    <string name="accessibility_quick_settings_heads_up_off">Heads up off.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Heads up on.</string>
+    <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
+    <plurals name="quick_settings_internet_hotspot_summary_num_devices">
+        <item quantity="other">%d devices connected</item>
+    </plurals>
+    <!-- Advanced Reboot -->
+    <string name="global_action_restart_advanced">高度な設定</string>
+    <string name="global_action_restart_recovery">リカバリー</string>
+    <string name="global_action_restart_bootloader">ブートローダー</string>
+    <string name="global_action_restart_ui">システム UI</string>
+</resources>
