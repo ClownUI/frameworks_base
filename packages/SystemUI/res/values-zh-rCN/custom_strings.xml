@@ -9,13 +9,18 @@
     <string name="qs_data_switch_changed_1">已将移动数据卡切换到 SIM 卡 1</string>
     <string name="qs_data_switch_changed_2">已将移动数据卡切换到 SIM 卡 2</string>
     <!-- Caffeine tile -->
-    <string name="quick_settings_caffeine_label">咖啡因</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <string name="quick_settings_caffeine_label">屏幕常亮</string>
+    <string name="accessibility_quick_settings_caffeine_off">保持亮屏 已关闭</string>
+    <string name="accessibility_quick_settings_caffeine_on">保持亮屏 已开启</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">浮动通知</string>
-    <string name="accessibility_quick_settings_heads_up_off">浮动通知 关闭。</string>
-    <string name="accessibility_quick_settings_heads_up_on">浮动通知 开启。</string>
+    <string name="accessibility_quick_settings_heads_up_off">浮动通知 已关闭</string>
+    <string name="accessibility_quick_settings_heads_up_on">浮动通知 已开启</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">息屏常亮</string>
+    <string name="quick_settings_aod_off_powersave_label">息屏常亮 已关闭\n省电模式</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB 网络共享</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="other">已连接 %d 台设备</item>
@@ -25,4 +30,6 @@
     <string name="global_action_restart_recovery">Recovery</string>
     <string name="global_action_restart_bootloader">Bootloader</string>
     <string name="global_action_restart_ui">系统界面</string>
+    <!-- Text while recognizing face -->
+    <string name="face_unlock_recognizing">正在识别人脸...</string>
 </resources>

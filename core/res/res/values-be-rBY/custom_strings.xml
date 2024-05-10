@@ -16,9 +16,9 @@
 -->
 <resources>
     <!-- Advanced reboot -->
-    <string name="reboot_to_recovery_title">Recovery</string>
+    <string name="reboot_to_recovery_title">Рэжым аднаўлення</string>
     <string name="reboot_to_recovery_message">Перазагрузка ў рэжым аднаўлення</string>
-    <string name="reboot_to_bootloader_title">Bootloader</string>
+    <string name="reboot_to_bootloader_title">Загрузчык</string>
     <string name="reboot_to_bootloader_message">Перазагрузка ў загрузчык</string>
     <string name="reboot_title">Перазагрузка</string>
     <string name="reboot_message">Перазагрузка сістэмы</string>
@@ -30,7 +30,7 @@
     <string name="url_copy_success">Спасылка паспяхова скапіравана</string>
     <string name="url_copy_failed">Падчас загрузкі журнала на сэрвіс Memochō адбылася памылка</string>
     <!-- Cycle through ringer modes -->
-    <string name="volume_dialog_ringer_guidance_normal">Calls and notifications will ring</string>
+    <string name="volume_dialog_ringer_guidance_normal">Гукавы сігнал для званкоў і апавяшчэнняў уключаны</string>
     <!-- LiveDisplay strings -->
     <string name="live_display_auto">Аўтаматычна</string>
     <string name="live_display_auto_summary">Аўтаматычна рэгуляваць тэмпературу колеру экрана пасля заходу і ўсходу сонца</string>
@@ -38,7 +38,7 @@
     <string name="live_display_off_summary">Адключыць усе налады</string>
     <string name="live_display_day">Day</string>
     <string name="live_display_day_summary">Выкарыстоўваць толькі дзённыя параметры</string>
-    <string name="live_display_night">Night</string>
+    <string name="live_display_night">Ноч</string>
     <string name="live_display_night_summary">Выкарыстоўваць толькі начныя параметры</string>
     <string name="live_display_outdoor">На вуліцы (яркае сонца)</string>
     <string name="live_display_outdoor_summary">Выкарыстоўваць толькі параметры вуліцы</string>

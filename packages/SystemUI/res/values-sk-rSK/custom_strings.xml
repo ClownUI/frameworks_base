@@ -10,12 +10,17 @@
     <string name="qs_data_switch_changed_2">Dátová karta prepnutá na SIM 2.</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Kofeín</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <string name="accessibility_quick_settings_caffeine_off">Kofeín vyp.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Kofeín zap.</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Plávajúce upozornenia</string>
     <string name="accessibility_quick_settings_heads_up_off">Plávajúce upozornenia vypnuté.</string>
     <string name="accessibility_quick_settings_heads_up_on">Plávajúce upozornenia zapnuté.</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD vyp.\nŠetrenie batérie</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Zdieľanie cez USB</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="one">%d pripojené zariadenie</item>
@@ -28,4 +33,6 @@
     <string name="global_action_restart_recovery">Obnovenie</string>
     <string name="global_action_restart_bootloader">Zavádzač</string>
     <string name="global_action_restart_ui">SystemUI</string>
+    <!-- Text while recognizing face -->
+    <string name="face_unlock_recognizing">Rozpoznávanie tváre...</string>
 </resources>

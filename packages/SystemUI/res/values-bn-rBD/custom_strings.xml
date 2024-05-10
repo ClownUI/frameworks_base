@@ -16,6 +16,11 @@
     <string name="quick_settings_heads_up_label">হেডস আপ</string>
     <string name="accessibility_quick_settings_heads_up_off">হেডস আপ বন্ধ</string>
     <string name="accessibility_quick_settings_heads_up_on">হেডস আপ চালু</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">ইউএসবি টেথারিং</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="one">%d টি ডিভাইস সংযুক্ত</item>
@@ -26,4 +31,6 @@
     <string name="global_action_restart_recovery">পুনরুদ্ধার</string>
     <string name="global_action_restart_bootloader">বুটলোডার</string>
     <string name="global_action_restart_ui">সিস্টেম UI</string>
+    <!-- Text while recognizing face -->
+    <string name="face_unlock_recognizing">Recognizing face...</string>
 </resources>

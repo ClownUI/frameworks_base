@@ -17,8 +17,8 @@
 <resources>
     <!-- Advanced reboot -->
     <string name="reboot_to_recovery_title">Recovery</string>
-    <string name="reboot_to_recovery_message">Перезагрузка в рекавери</string>
-    <string name="reboot_to_bootloader_title">Bootloader</string>
+    <string name="reboot_to_recovery_message">Перезагрузка в режим восстановления</string>
+    <string name="reboot_to_bootloader_title">Режим загрузчика</string>
     <string name="reboot_to_bootloader_message">Перезагрузка в режим загрузчика</string>
     <string name="reboot_title">Перезагрузка</string>
     <string name="reboot_message">Перезагрузка системы</string>

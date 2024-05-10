@@ -10,20 +10,27 @@
     <string name="qs_data_switch_changed_2">Växlade datakort till SIM 2.</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Caffeine</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine av</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine på</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Heads up</string>
     <string name="accessibility_quick_settings_heads_up_off">Heads up av.</string>
     <string name="accessibility_quick_settings_heads_up_on">Heads up på.</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Internetdelning via USB</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="one">%d device connected</item>
-        <item quantity="other">%d devices connected</item>
+        <item quantity="other">%d Enheter är anslutna</item>
     </plurals>
     <!-- Advanced Reboot -->
     <string name="global_action_restart_advanced">Avancerat</string>
     <string name="global_action_restart_recovery">Återställning</string>
     <string name="global_action_restart_bootloader">Starthanterare</string>
     <string name="global_action_restart_ui">Systemgränssnitt</string>
+    <!-- Text while recognizing face -->
+    <string name="face_unlock_recognizing">Recognizing face...</string>
 </resources>

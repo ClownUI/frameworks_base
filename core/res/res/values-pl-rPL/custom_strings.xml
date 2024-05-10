@@ -16,8 +16,8 @@
 -->
 <resources>
     <!-- Advanced reboot -->
-    <string name="reboot_to_recovery_title">Tryb recovery</string>
-    <string name="reboot_to_recovery_message">Uruchamiam ponownie do trybu recovery</string>
+    <string name="reboot_to_recovery_title">Tryb odzyskiwania</string>
+    <string name="reboot_to_recovery_message">Uruchamiam ponownie do trybu odzyskiwania</string>
     <string name="reboot_to_bootloader_title">Restart do trybu bootloader\'a</string>
     <string name="reboot_to_bootloader_message">Uruchamiam ponownie do trybu bootloader</string>
     <string name="reboot_title">Uruchom ponownie</string>
@@ -42,7 +42,7 @@
     <string name="live_display_night_summary">Użyj wyłącznie ustawień nocnych</string>
     <string name="live_display_outdoor">Na zewnątrz (jasne światło)</string>
     <string name="live_display_outdoor_summary">Używaj ustawień tylko na zewnątrz</string>
-    <string name="live_display_hint">NaZewnątrz może zredukować zmęczenie oczu oraz może pomóc zasnąć w nocy. Kliknij aby wypróbować!</string>
+    <string name="live_display_hint">Na Zewnątrz może zredukować zmęczenie oczu oraz może pomóc zasnąć w nocy. Kliknij aby wypróbować!</string>
     <string name="accessibility_quick_settings_live_display_off">LiveDisplay wył.</string>
     <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: tryb automatyczny.</string>
     <string name="accessibility_quick_settings_live_display_day">LiveDisplay: tryb dzienny.</string>

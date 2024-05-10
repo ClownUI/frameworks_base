@@ -10,12 +10,17 @@
     <string name="qs_data_switch_changed_2">Basculer les données sur la carte SIM 2.</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Caféine</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caféine désactivé</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine activé</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Notifications flottantes</string>
     <string name="accessibility_quick_settings_heads_up_off">Désactiver les notifications flottantes.</string>
     <string name="accessibility_quick_settings_heads_up_on">Activer les notifications flottantes.</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">Affichage permanent</string>
+    <string name="quick_settings_aod_off_powersave_label">Affichage permanent désactivé\nÉconomiseur de batterie</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Partage de connexion par USB</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="one">%d appareil connecté</item>
@@ -26,4 +31,6 @@
     <string name="global_action_restart_recovery">Recovery</string>
     <string name="global_action_restart_bootloader">Bootloader</string>
     <string name="global_action_restart_ui">Interface système</string>
+    <!-- Text while recognizing face -->
+    <string name="face_unlock_recognizing">Reconaissance faciale...</string>
 </resources>

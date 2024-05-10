@@ -10,12 +10,17 @@
     <string name="qs_data_switch_changed_2">Usando SIM 2 para datos móviles.</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Modo cafeína</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <string name="accessibility_quick_settings_caffeine_off">Modo Cafeína desactivado</string>
+    <string name="accessibility_quick_settings_caffeine_on">Modo Cafeína activado</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Notificaciones emergentes</string>
     <string name="accessibility_quick_settings_heads_up_off">Notificaciones emergentes desactivadas.</string>
     <string name="accessibility_quick_settings_heads_up_on">Notificaciones emergentes activadas.</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Anclaje de red por USB</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="one">%d dispositivo conectado</item>
@@ -26,4 +31,6 @@
     <string name="global_action_restart_recovery">Modo Recovery</string>
     <string name="global_action_restart_bootloader">Modo Bootloader</string>
     <string name="global_action_restart_ui">Interfaz de sistema</string>
+    <!-- Text while recognizing face -->
+    <string name="face_unlock_recognizing">Recognizing face...</string>
 </resources>

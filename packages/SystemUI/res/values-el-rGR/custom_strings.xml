@@ -10,12 +10,17 @@
     <string name="qs_data_switch_changed_2">Έγινε εναλλαγή στην κάρτα SIM 2.</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Καφεΐνη</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <string name="accessibility_quick_settings_caffeine_off">Καφεΐνη ανενεργή</string>
+    <string name="accessibility_quick_settings_caffeine_on">Καφεΐνη ενεργή</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Αναδυόμενες ειδοποιήσεις</string>
     <string name="accessibility_quick_settings_heads_up_off">Αναδυόμενες ειδοποιήσεις ανενεργές.</string>
     <string name="accessibility_quick_settings_heads_up_on">Αναδυόμενες ειδοποιήσεις ενεργές.</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">Οθόνη πάντα ενεργή</string>
+    <string name="quick_settings_aod_off_powersave_label">Οθόνη πάντα ενεργή κλειστή\nΕξοικονόμηση μπαταρίας</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Πρόσδεση USB</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="one">%d συσκευή συνδέθηκε</item>
@@ -26,4 +31,6 @@
     <string name="global_action_restart_recovery">Λειτουργία αποκατάστασης</string>
     <string name="global_action_restart_bootloader">Εκκινητής</string>
     <string name="global_action_restart_ui">ΣύστημαUI</string>
+    <!-- Text while recognizing face -->
+    <string name="face_unlock_recognizing">Γίνεται αναγνώριση προσώπου...</string>
 </resources>

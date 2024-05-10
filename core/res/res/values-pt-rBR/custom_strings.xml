@@ -30,7 +30,7 @@
     <string name="url_copy_success">URL copiado com sucesso</string>
     <string name="url_copy_failed">Ocorreu um erro ao fazer o upload do log para o Memochō</string>
     <!-- Cycle through ringer modes -->
-    <string name="volume_dialog_ringer_guidance_normal">Chamadas e notificações farão o dispositivo tocar</string>
+    <string name="volume_dialog_ringer_guidance_normal">Chamadas e notificações irão tocar</string>
     <!-- LiveDisplay strings -->
     <string name="live_display_auto">Automático</string>
     <string name="live_display_auto_summary">Ajusta automaticamente a temperatura de cor da tela após o pôr do sol e nascer do sol</string>

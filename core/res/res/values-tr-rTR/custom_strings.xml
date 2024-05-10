@@ -30,7 +30,7 @@
     <string name="url_copy_success">URL başarıyla kopyalandı</string>
     <string name="url_copy_failed">Günlük Memochō\'ya yüklenirken bir hata oluştu</string>
     <!-- Cycle through ringer modes -->
-    <string name="volume_dialog_ringer_guidance_normal">Çağrılar ve bildirimler için zil sesi</string>
+    <string name="volume_dialog_ringer_guidance_normal">Aramalar ve bildirimler zil çalacak</string>
     <!-- LiveDisplay strings -->
     <string name="live_display_auto">Otomatik</string>
     <string name="live_display_auto_summary">Günbatımı ve gündoğumundan sonra otomatik olarak ekran renk sıcaklığını ayarla</string>
@@ -44,15 +44,15 @@
     <string name="live_display_outdoor_summary">Sadece açık alan ayarlarını kullan</string>
     <string name="live_display_hint">LiveDisplay göz yorgunluğunuzu azaltıp geceleri uyumanıza yardımcı olabilir. Denemek için buraya tıklayın!</string>
     <string name="accessibility_quick_settings_live_display_off">LiveDisplay kapalı.</string>
-    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: Otomatik modu.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: otomatik mod.</string>
     <string name="accessibility_quick_settings_live_display_day">LiveDisplay: gündüz modu.</string>
     <string name="accessibility_quick_settings_live_display_night">LiveDisplay: gece modu.</string>
-    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: Açık alan modu.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: açık alan modu.</string>
     <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay kapatıldı.</string>
-    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay otomatik moda geçti.</string>
-    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay gündüz moduna geçti.</string>
-    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay gece moduna geçti.</string>
-    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay açık hava moduna geçti.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay otomatik moda ayarlandı.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay gündüz moduna ayarlandı.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay gece moduna ayarlandı.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay açık hava moduna ayarlandı.</string>
     <!-- Health interface -->
     <string name="charging_control_notification_channel">Şarj kontrolü</string>
     <string name="charging_control_notification_title">Şarj kontrolü</string>

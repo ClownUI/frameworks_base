@@ -16,6 +16,11 @@
     <string name="quick_settings_heads_up_label">Thông báo nhanh</string>
     <string name="accessibility_quick_settings_heads_up_off">Tắt thông báo nhanh.</string>
     <string name="accessibility_quick_settings_heads_up_on">Bật thông báo nhanh.</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Chia sẻ kết nối qua USB</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="other">%d devices connected</item>
@@ -25,4 +30,6 @@
     <string name="global_action_restart_recovery">Chế độ khôi phục</string>
     <string name="global_action_restart_bootloader">Trình nạp khởi động</string>
     <string name="global_action_restart_ui">Giao diện hệ thống</string>
+    <!-- Text while recognizing face -->
+    <string name="face_unlock_recognizing">Recognizing face...</string>
 </resources>
