@@ -300,6 +300,12 @@ constructor(
                 updateResources()
             }
 
+
+            override fun onThemeChanged() {
+                clock.setTextAppearance(R.style.TextAppearance_QS_Status)
+                date.setTextAppearance(R.style.TextAppearance_QS_Status)
+                mShadeCarrierGroup.updateTextAppearance(R.style.TextAppearance_QS_Status_Carriers)
+            }
         }
 
     private val nextAlarmCallback =
