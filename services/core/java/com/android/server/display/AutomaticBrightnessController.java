@@ -42,7 +42,6 @@ import android.os.PowerManager;
 import android.os.RemoteException;
 import android.os.SystemClock;
 import android.os.Trace;
-import android.provider.Settings;
 import android.util.EventLog;
 import android.util.MathUtils;
 import android.util.Slog;
@@ -360,7 +359,6 @@ public class AutomaticBrightnessController {
         mPendingForegroundAppCategory = ApplicationInfo.CATEGORY_UNDEFINED;
         mBrightnessRangeController = brightnessModeController;
         mBrightnessThrottler = brightnessThrottler;
-        mAutoBrightnessOneShot = false;
         mBrightnessMappingStrategyMap = brightnessMappingStrategyMap;
 
         // Use the given short-term model
