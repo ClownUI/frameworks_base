@@ -176,6 +176,7 @@ public class ScreenshotController {
      */
     static class SavedImageData {
         public Uri uri;
+        public Notification.Action deleteAction;
         public List<Notification.Action> smartActions;
         public Notification.Action quickShareAction;
         public UserHandle owner;
@@ -186,6 +187,7 @@ public class ScreenshotController {
          */
         public void reset() {
             uri = null;
+            deleteAction = null;
             smartActions = null;
             quickShareAction = null;
             subject = null;
