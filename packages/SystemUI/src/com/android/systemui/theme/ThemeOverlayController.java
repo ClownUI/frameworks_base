@@ -20,6 +20,7 @@ import static android.util.TypedValue.TYPE_INT_COLOR_ARGB8;
 
 import static com.android.systemui.Flags.themeOverlayControllerWakefulnessDeprecation;
 import static com.android.systemui.keyguard.WakefulnessLifecycle.WAKEFULNESS_ASLEEP;
+import static com.android.systemui.shared.Flags.enableHomeDelay;
 import static com.android.systemui.theme.ThemeOverlayApplier.COLOR_SOURCE_HOME;
 import static com.android.systemui.theme.ThemeOverlayApplier.COLOR_SOURCE_LOCK;
 import static com.android.systemui.theme.ThemeOverlayApplier.COLOR_SOURCE_PRESET;
@@ -31,6 +32,7 @@ import static com.android.systemui.theme.ThemeOverlayApplier.OVERLAY_COLOR_INDEX
 import static com.android.systemui.theme.ThemeOverlayApplier.OVERLAY_COLOR_SOURCE;
 import static com.android.systemui.theme.ThemeOverlayApplier.TIMESTAMP_FIELD;
 
+import android.app.ActivityManager;
 import android.app.UiModeManager;
 import android.app.WallpaperColors;
 import android.app.WallpaperManager;
@@ -144,6 +146,7 @@ public class ThemeOverlayController implements CoreStartable, Dumpable {
     // Current wallpaper colors associated to a user.
     private final SparseArray<WallpaperColors> mCurrentColors = new SparseArray<>();
     private final WallpaperManager mWallpaperManager;
+    private final ActivityManager mActivityManager;
     @VisibleForTesting
     protected ColorScheme mColorScheme;
     // If fabricated overlays were already created for the current theme.
@@ -433,7 +436,8 @@ public class ThemeOverlayController implements CoreStartable, Dumpable {
             JavaAdapter javaAdapter,
             KeyguardTransitionInteractor keyguardTransitionInteractor,
             ConfigurationController configurationController,
-            UiModeManager uiModeManager) {
+            UiModeManager uiModeManager,
+            ActivityManager activityManager) {
         mContext = context;
         mIsMonetEnabled = featureFlags.isEnabled(Flags.MONET);
         mIsFidelityEnabled = featureFlags.isEnabled(Flags.COLOR_FIDELITY);
@@ -453,6 +457,7 @@ public class ThemeOverlayController implements CoreStartable, Dumpable {
         mKeyguardTransitionInteractor = keyguardTransitionInteractor;
         mConfigurationController = configurationController;
         mUiModeManager = uiModeManager;
+        mActivityManager = activityManager;
         dumpManager.registerDumpable(TAG, this);
     }
 
@@ -870,11 +875,19 @@ public class ThemeOverlayController implements CoreStartable, Dumpable {
             }
         }
 
+        final Runnable onCompleteCallback = !enableHomeDelay()
+                ? () -> {}
+                : () -> {
+                    Log.d(TAG, "ThemeHomeDelay: ThemeOverlayController ready");
+                    mActivityManager.setThemeOverlayReady(currentUser);
+                };
+
         if (DEBUG) {
             Log.d(TAG, "Applying overlays: " + categoryToPackage.keySet().stream()
                     .map(key -> key + " -> " + categoryToPackage.get(key)).collect(
                             Collectors.joining(", ")));
         }
+
 
         boolean nightMode = (mContext.getResources().getConfiguration().uiMode
                 & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;
@@ -883,17 +896,20 @@ public class ThemeOverlayController implements CoreStartable, Dumpable {
 
         mThemeManager.setIsBlackTheme(isBlackTheme);
 
+        FabricatedOverlay[] fOverlays = null;
+
         if (mNeedsOverlayCreation) {
             mNeedsOverlayCreation = false;
-            mThemeManager.applyCurrentUserOverlays(categoryToPackage, new FabricatedOverlay[]{
+            fOverlays = new FabricatedOverlay[]{
                     mSecondaryOverlay, mNeutralOverlay, mDynamicOverlay
-            }, currentUser, managedProfiles);
-        } else {
-            mThemeManager.applyCurrentUserOverlays(categoryToPackage, null, currentUser,
-                    managedProfiles);
+            };
         }
 
+        mThemeManager.applyCurrentUserOverlays(categoryToPackage, fOverlays, currentUser,
+                managedProfiles, onCompleteCallback);
+
         mThemeManager.applyBlackTheme(isBlackTheme);
+
     }
 
     private Style fetchThemeStyleFromSetting() {

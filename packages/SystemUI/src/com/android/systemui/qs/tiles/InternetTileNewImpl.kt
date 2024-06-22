@@ -33,7 +33,7 @@ import com.android.systemui.qs.QSHost
 import com.android.systemui.qs.QsEventLogger
 import com.android.systemui.qs.logging.QSLogger
 import com.android.systemui.qs.tileimpl.QSTileImpl
-import com.android.systemui.qs.tiles.dialog.InternetDialogFactory
+import com.android.systemui.qs.tiles.dialog.InternetDialogManager
 import com.android.systemui.res.R
 import com.android.systemui.statusbar.connectivity.AccessPointController
 import com.android.systemui.statusbar.pipeline.shared.ui.binder.InternetTileBinder
@@ -45,19 +45,19 @@ import javax.inject.Inject
 class InternetTileNewImpl
 @Inject
 constructor(
-    host: QSHost,
-    keyguardStateController: KeyguardStateController,
-    uiEventLogger: QsEventLogger,
-    @Background backgroundLooper: Looper,
-    @Main private val mainHandler: Handler,
-    falsingManager: FalsingManager,
-    metricsLogger: MetricsLogger,
-    statusBarStateController: StatusBarStateController,
-    activityStarter: ActivityStarter,
-    qsLogger: QSLogger,
-    viewModel: InternetTileViewModel,
-    private val internetDialogFactory: InternetDialogFactory,
-    private val accessPointController: AccessPointController,
+        host: QSHost,
+        keyguardStateController: KeyguardStateController,
+        uiEventLogger: QsEventLogger,
+        @Background backgroundLooper: Looper,
+        @Main private val mainHandler: Handler,
+        falsingManager: FalsingManager,
+        metricsLogger: MetricsLogger,
+        statusBarStateController: StatusBarStateController,
+        activityStarter: ActivityStarter,
+        qsLogger: QSLogger,
+        viewModel: InternetTileViewModel,
+        private val internetDialogManager: InternetDialogManager,
+        private val accessPointController: AccessPointController,
 ) :
     SecureQSTile<QSTile.BooleanState>(
         host,
@@ -93,7 +93,7 @@ constructor(
         }
 
         mainHandler.post {
-            internetDialogFactory.create(
+            internetDialogManager.create(
                 aboveStatusBar = true,
                 accessPointController.canConfigMobileData(),
                 accessPointController.canConfigWifi(),
