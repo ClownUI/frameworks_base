@@ -21,6 +21,11 @@
     <string name="quick_settings_aod_off_powersave_label">Affichage permanent désactivé\nÉconomiseur de batterie</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">Partage de connexion par USB</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Partage de recharge sans fil</string>
+    <string name="quick_settings_powershare_off_powersave_label">Partage de recharge sans fil désactivée\nÉconomiseur de batterie</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Partage de recharge sans fil désactivée\nBatterie trop faible</string>
+    <string name="quick_settings_powershare_enabled_label">Le partage de recharge sans fil est activé</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="one">%d appareil connecté</item>
@@ -33,4 +38,12 @@
     <string name="global_action_restart_ui">Interface système</string>
     <!-- Text while recognizing face -->
     <string name="face_unlock_recognizing">Reconaissance faciale...</string>
+    <!-- Status bar -->
+    <string name="status_bar_icons_title">Icônes de la barre d\'état</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Roaming indicator</string>
+    <!-- Name of the data saver status bar icon. -->
+    <string name="status_bar_data_saver">Data saver</string>
 </resources>

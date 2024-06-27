@@ -16,9 +16,9 @@
 -->
 <resources>
     <!-- Advanced reboot -->
-    <string name="reboot_to_recovery_title">Recovery</string>
+    <string name="reboot_to_recovery_title">रिकवरी</string>
     <string name="reboot_to_recovery_message">रिकवरी पर रिबूट हो रहा है</string>
-    <string name="reboot_to_bootloader_title">Bootloader</string>
+    <string name="reboot_to_bootloader_title">बूटलोडर</string>
     <string name="reboot_to_bootloader_message">बूटलोडर पर रिबूट हो रहा है</string>
     <string name="reboot_title">रिबूट</string>
     <string name="reboot_message">सिस्टम को रिबूट हो रहा है</string>
@@ -30,15 +30,15 @@
     <string name="url_copy_success">URL सफलतापूर्वक कॉपी हो गया</string>
     <string name="url_copy_failed">लॉग को अपलोड करने में कोई मुश्किल हो गई</string>
     <!-- Cycle through ringer modes -->
-    <string name="volume_dialog_ringer_guidance_normal">Calls and notifications will ring</string>
+    <string name="volume_dialog_ringer_guidance_normal">कॉल और सूचनाएं बजेंगी</string>
     <!-- LiveDisplay strings -->
     <string name="live_display_auto">स्वचालित</string>
     <string name="live_display_auto_summary">स्क्रीन के रंग का तापमान अपने आप एडजस्ट करे</string>
-    <string name="live_display_off">Off</string>
+    <string name="live_display_off">बंद</string>
     <string name="live_display_off_summary">सभी सुधार को बंद करें</string>
-    <string name="live_display_day">Day</string>
+    <string name="live_display_day">दिन</string>
     <string name="live_display_day_summary">दिन के सेटिंग्स का ही प्रयोग करे</string>
-    <string name="live_display_night">Night</string>
+    <string name="live_display_night">रात</string>
     <string name="live_display_night_summary">रात के सेटिंग्स का ही प्रयोग करे</string>
     <string name="live_display_outdoor">बाहर (तेज़ धूप)</string>
     <string name="live_display_outdoor_summary">बाहर के सेटिंग्स का ही प्रयोग करे</string>

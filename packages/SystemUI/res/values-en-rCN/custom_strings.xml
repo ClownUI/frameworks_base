@@ -17,13 +17,18 @@
     <string name="accessibility_quick_settings_heads_up_off">关闭悬浮通知.</string>
     <string name="accessibility_quick_settings_heads_up_on">开启悬浮通知.</string>
     <!-- AOD QS tile -->
-    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_label">息屏显示</string>
     <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">USB tethering</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">网络共享</string>
+    <string name="quick_settings_powershare_off_powersave_label">网络共享关闭\n省电</string>
+    <string name="quick_settings_powershare_off_low_battery_label">网络共享关闭\n电量过低</string>
+    <string name="quick_settings_powershare_enabled_label">网络共享已开启</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
-        <item quantity="one">已连接%d台设备</item>
+        <item quantity="one">已连接%d部设备</item>
         <item quantity="other">%d devices connected</item>
     </plurals>
     <!-- Advanced Reboot -->
@@ -32,5 +37,13 @@
     <string name="global_action_restart_bootloader">引导模式</string>
     <string name="global_action_restart_ui">系统界面</string>
     <!-- Text while recognizing face -->
-    <string name="face_unlock_recognizing">Recognizing face...</string>
+    <string name="face_unlock_recognizing">正在识别面部......</string>
+    <!-- Status bar -->
+    <string name="status_bar_icons_title">Status bar icons</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Roaming indicator</string>
+    <!-- Name of the data saver status bar icon. -->
+    <string name="status_bar_data_saver">Data saver</string>
 </resources>

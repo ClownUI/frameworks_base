@@ -21,6 +21,11 @@
     <string name="quick_settings_aod_off_powersave_label">AOD vyp.\nSpořič baterie</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">USB tethering</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Bezdrátové sdílení energie</string>
+    <string name="quick_settings_powershare_off_powersave_label">Bezdrátové sdílení energie je vypnuto\nSpořič baterie</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Bezdrátové sdílení energie je vypnuto\nNízký stav baterie</string>
+    <string name="quick_settings_powershare_enabled_label">Bezdrátové sdílení energie je zapnuto</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="one">%d zařízení připojeno</item>
@@ -35,4 +40,12 @@
     <string name="global_action_restart_ui">SystemUI</string>
     <!-- Text while recognizing face -->
     <string name="face_unlock_recognizing">Rozpoznávání obličeje...</string>
+    <!-- Status bar -->
+    <string name="status_bar_icons_title">Ikony stavového řádku</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Roaming indicator</string>
+    <!-- Name of the data saver status bar icon. -->
+    <string name="status_bar_data_saver">Data saver</string>
 </resources>

@@ -62,5 +62,5 @@
     <string name="charging_control_notification_content_target">电池将在 %1$s 完全充满</string>
     <string name="charging_control_notification_content_target_reached">电池已充满</string>
     <!-- Pocket Lock -->
-    <string name="pocket_lock_message_long_press">长按电源键以解锁</string>
+    <string name="pocket_lock_message_long_press">按住电源键解锁</string>
 </resources>

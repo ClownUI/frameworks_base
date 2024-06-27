@@ -10,17 +10,22 @@
     <string name="qs_data_switch_changed_2">데이터 전용 SIM 카드를 SIM 2로 전환</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">화면 계속 켜기</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <string name="accessibility_quick_settings_caffeine_off">화면 꺼짐 방지 꺼짐</string>
+    <string name="accessibility_quick_settings_caffeine_on">화면 꺼짐 방지 켜짐</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">화면 상단 알림</string>
     <string name="accessibility_quick_settings_heads_up_off">화면 상단 알림 꺼짐</string>
     <string name="accessibility_quick_settings_heads_up_on">화면 상단 알림 켜짐</string>
     <!-- AOD QS tile -->
     <string name="quick_settings_aod_label">AOD</string>
-    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD 꺼짐\n절전 모드</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">USB 테더링</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">무선 배터리 공유</string>
+    <string name="quick_settings_powershare_off_powersave_label">무선 배터리 공유 꺼짐 \n배터리 절약 모드</string>
+    <string name="quick_settings_powershare_off_low_battery_label">무선 배터리 공유 꺼짐\n 배터리가 부족합니다</string>
+    <string name="quick_settings_powershare_enabled_label">무선 배터리 공유 켜짐</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="other">%d개 장치 연결됨</item>
@@ -31,5 +36,13 @@
     <string name="global_action_restart_bootloader">부트로더</string>
     <string name="global_action_restart_ui">시스템UI</string>
     <!-- Text while recognizing face -->
-    <string name="face_unlock_recognizing">Recognizing face...</string>
+    <string name="face_unlock_recognizing">얼굴 인식중...</string>
+    <!-- Status bar -->
+    <string name="status_bar_icons_title">상태 표시줄 아이콘</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Roaming indicator</string>
+    <!-- Name of the data saver status bar icon. -->
+    <string name="status_bar_data_saver">Data saver</string>
 </resources>

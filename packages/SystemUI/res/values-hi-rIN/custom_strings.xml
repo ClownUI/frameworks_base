@@ -10,27 +10,40 @@
     <string name="qs_data_switch_changed_2">डेटा कार्ड को सिम 2 पर स्विच करें</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">कैफ़ीन</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <string name="accessibility_quick_settings_caffeine_off">कैफीन बंद</string>
+    <string name="accessibility_quick_settings_caffeine_on">कैफ़ीन चालू</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">हेड्स अप</string>
     <string name="accessibility_quick_settings_heads_up_off">हेड्स अप बंद</string>
     <string name="accessibility_quick_settings_heads_up_on">हेड्स अप ऑन</string>
     <!-- AOD QS tile -->
-    <string name="quick_settings_aod_label">AOD</string>
-    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <string name="quick_settings_aod_label">ऑलवेज ऑन डिस्प्ले</string>
+    <string name="quick_settings_aod_off_powersave_label">ऑलवेज ऑन डिस्प्ले बंद है\nबैटरी सेवर</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">यूएसबी टेदरिंग</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Wireless PowerShare</string>
+    <string name="quick_settings_powershare_off_powersave_label">Wireless PowerShare off\nBattery saver</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Wireless PowerShare off\nBattery too low</string>
+    <string name="quick_settings_powershare_enabled_label">Wireless PowerShare is enabled</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="one">%d device connected</item>
-        <item quantity="other">%d devices connected</item>
+        <item quantity="other">%d डिवाइस जुड़े हैं</item>
     </plurals>
     <!-- Advanced Reboot -->
-    <string name="global_action_restart_advanced">Advanced</string>
-    <string name="global_action_restart_recovery">Recovery</string>
-    <string name="global_action_restart_bootloader">Bootloader</string>
-    <string name="global_action_restart_ui">SystemUI</string>
+    <string name="global_action_restart_advanced">उन्नत</string>
+    <string name="global_action_restart_recovery">रिकवरी</string>
+    <string name="global_action_restart_bootloader">बूटलोडर</string>
+    <string name="global_action_restart_ui">सिस्टम यूआई</string>
     <!-- Text while recognizing face -->
-    <string name="face_unlock_recognizing">Recognizing face...</string>
+    <string name="face_unlock_recognizing">चेहरे की पहचान हो रही है...</string>
+    <!-- Status bar -->
+    <string name="status_bar_icons_title">स्टेटस बार आइकन्स</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">वीपीएन</string>
+    <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Roaming indicator</string>
+    <!-- Name of the data saver status bar icon. -->
+    <string name="status_bar_data_saver">Data saver</string>
 </resources>

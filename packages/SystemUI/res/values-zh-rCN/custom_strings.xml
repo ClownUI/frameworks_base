@@ -9,7 +9,7 @@
     <string name="qs_data_switch_changed_1">已将移动数据卡切换到 SIM 卡 1</string>
     <string name="qs_data_switch_changed_2">已将移动数据卡切换到 SIM 卡 2</string>
     <!-- Caffeine tile -->
-    <string name="quick_settings_caffeine_label">屏幕常亮</string>
+    <string name="quick_settings_caffeine_label">保持亮屏</string>
     <string name="accessibility_quick_settings_caffeine_off">保持亮屏 已关闭</string>
     <string name="accessibility_quick_settings_caffeine_on">保持亮屏 已开启</string>
     <!-- Heads up QS tile -->
@@ -21,6 +21,11 @@
     <string name="quick_settings_aod_off_powersave_label">息屏常亮 已关闭\n省电模式</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">USB 网络共享</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">无线反向充电</string>
+    <string name="quick_settings_powershare_off_powersave_label">无线反向充电已关闭\n省电模式</string>
+    <string name="quick_settings_powershare_off_low_battery_label">无线反向充电已关闭\n电量过低</string>
+    <string name="quick_settings_powershare_enabled_label">无线反向充电已启用</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="other">已连接 %d 台设备</item>
@@ -32,4 +37,12 @@
     <string name="global_action_restart_ui">系统界面</string>
     <!-- Text while recognizing face -->
     <string name="face_unlock_recognizing">正在识别人脸...</string>
+    <!-- Status bar -->
+    <string name="status_bar_icons_title">状态栏图标</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Roaming indicator</string>
+    <!-- Name of the data saver status bar icon. -->
+    <string name="status_bar_data_saver">Data saver</string>
 </resources>

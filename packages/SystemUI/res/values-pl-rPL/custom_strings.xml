@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- DataSwitch Tile -->
-    <string name="qs_data_switch_label">Przełącz kartę odpowiedzialną za transmisję danych</string>
-    <string name="qs_data_switch_toast_0">Obecnie nie wykryto żadnej karty SIM</string>
-    <string name="qs_data_switch_toast_1">Obecnie tylko jedna karta SIM została włożona</string>
+    <string name="qs_data_switch_label">Przełącz kartę do transmisji danych</string>
+    <string name="qs_data_switch_toast_0">Obecnie żadna karta SIM nie jest włożona</string>
+    <string name="qs_data_switch_toast_1">Obecnie tylko jedna karta SIM jest włożona</string>
     <string name="qs_data_switch_text_1">SIM 1</string>
     <string name="qs_data_switch_text_2">SIM 2</string>
-    <string name="qs_data_switch_changed_1">Przełączono kartę odpowiedzialną za dane na SIM 1.</string>
-    <string name="qs_data_switch_changed_2">Przełączono kartę odpowiedzialną za dane na SIM 2.</string>
+    <string name="qs_data_switch_changed_1">Przełączono kartę do transmisji danych na SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Przełączono kartę do transmisji danych na SIM 2.</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Kofeina</string>
     <string name="accessibility_quick_settings_caffeine_off">Kofeina wyłączona</string>
@@ -18,12 +18,17 @@
     <string name="accessibility_quick_settings_heads_up_on">Wł. wyskakujące powiadomienia.</string>
     <!-- AOD QS tile -->
     <string name="quick_settings_aod_label">AOD</string>
-    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD wyłączony\nOszczędzanie baterii</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">Udostępnianie internetu przez USB</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Ładowanie bezprzewodowe PowerShare</string>
+    <string name="quick_settings_powershare_off_powersave_label">Bezprzewodowe PowerShare wyłączone \n Oszczędzanie baterii</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Ładowanie zwrotne PowerShare wyłączone\nNaładuj baterię</string>
+    <string name="quick_settings_powershare_enabled_label">Bezprzewodowe ładowanie PowerShare jest włączone</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
-        <item quantity="one">%d połączone urządzenie</item>
+        <item quantity="one">Połączone urządzenia: %d</item>
         <item quantity="few">%d połączonych urządzeń</item>
         <item quantity="many">%d połączonych urządzeń</item>
         <item quantity="other">%d połączonych urządzeń</item>
@@ -31,8 +36,16 @@
     <!-- Advanced Reboot -->
     <string name="global_action_restart_advanced">Zaawansowane</string>
     <string name="global_action_restart_recovery">Tryb recovery</string>
-    <string name="global_action_restart_bootloader">Restart do trybu bootloader</string>
+    <string name="global_action_restart_bootloader">Tryb Bootloadera</string>
     <string name="global_action_restart_ui">Zrestartuj Interfejs</string>
     <!-- Text while recognizing face -->
-    <string name="face_unlock_recognizing">Recognizing face...</string>
+    <string name="face_unlock_recognizing">Rozpoznawanie twarzy...</string>
+    <!-- Status bar -->
+    <string name="status_bar_icons_title">Ikony paska statusu</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Roaming indicator</string>
+    <!-- Name of the data saver status bar icon. -->
+    <string name="status_bar_data_saver">Data saver</string>
 </resources>

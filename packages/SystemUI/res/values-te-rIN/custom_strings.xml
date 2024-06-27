@@ -21,6 +21,11 @@
     <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">USB టెథరింగ్</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">వైర్లెస్ పవర్షేర్</string>
+    <string name="quick_settings_powershare_off_powersave_label">వైర్లెస్ పవర్షేర్ ఆఫ్\nబాటరీ టూ లౌ</string>
+    <string name="quick_settings_powershare_off_low_battery_label">వైర్లెస్ పవర్షేర్ ఆఫ్\nబ్యాటరీ చాలా తక్కువ</string>
+    <string name="quick_settings_powershare_enabled_label">వైర్లెస్ పవర్షేర్ సౌకర్యం ఆన్ చేయబడివుంది</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
         <item quantity="one">%d పరికరం కనెక్ట్ చేయబడింది</item>
@@ -33,4 +38,12 @@
     <string name="global_action_restart_ui">సిస్టమ్UI</string>
     <!-- Text while recognizing face -->
     <string name="face_unlock_recognizing">Recognizing face...</string>
+    <!-- Status bar -->
+    <string name="status_bar_icons_title">స్థితి పట్టీ చిహ్నాలు</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Roaming indicator</string>
+    <!-- Name of the data saver status bar icon. -->
+    <string name="status_bar_data_saver">Data saver</string>
 </resources>

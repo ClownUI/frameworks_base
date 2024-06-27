@@ -21,9 +21,14 @@
     <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">Penambatan USB</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">PowerShare nirwayar</string>
+    <string name="quick_settings_powershare_off_powersave_label">PowerShare nirwayar dimatikan\nPenjimatan bateri</string>
+    <string name="quick_settings_powershare_off_low_battery_label">PowerShare nirwayar dimatikan\nBateri terlalu lemah</string>
+    <string name="quick_settings_powershare_enabled_label">PowerShare nirwayar dibolehkan</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
-        <item quantity="other">%d devices connected</item>
+        <item quantity="other">%d peranti disambungkan</item>
     </plurals>
     <!-- Advanced Reboot -->
     <string name="global_action_restart_advanced">Tambahan</string>
@@ -31,5 +36,13 @@
     <string name="global_action_restart_bootloader">Bootloader</string>
     <string name="global_action_restart_ui">SystemUI</string>
     <!-- Text while recognizing face -->
-    <string name="face_unlock_recognizing">Recognizing face...</string>
+    <string name="face_unlock_recognizing">Mengecam muka...</string>
+    <!-- Status bar -->
+    <string name="status_bar_icons_title">Ikon status bar</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Roaming indicator</string>
+    <!-- Name of the data saver status bar icon. -->
+    <string name="status_bar_data_saver">Data saver</string>
 </resources>

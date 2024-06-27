@@ -30,7 +30,7 @@
     <string name="url_copy_success">URL copiado com sucesso</string>
     <string name="url_copy_failed">Ocorreu um erro ao enviar o registro</string>
     <!-- Cycle through ringer modes -->
-    <string name="volume_dialog_ringer_guidance_normal">Calls and notifications will ring</string>
+    <string name="volume_dialog_ringer_guidance_normal">Chamadas e notificações irão tocar</string>
     <!-- LiveDisplay strings -->
     <string name="live_display_auto">Automático</string>
     <string name="live_display_auto_summary">Ajusta automaticamente a temperatura de cor do ecrã após o pôr do sol e o nascer do sol</string>
@@ -54,13 +54,13 @@
     <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay alterado para o modo noite.</string>
     <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay alterado para o modo exterior.</string>
     <!-- Health interface -->
-    <string name="charging_control_notification_channel">Charging control</string>
-    <string name="charging_control_notification_title">Charging control</string>
-    <string name="charging_control_notification_cancel_once">Cancel</string>
-    <string name="charging_control_notification_content_limit">Battery will be charged to %1$d%%</string>
-    <string name="charging_control_notification_content_limit_reached">Battery is charged to %1$d%%</string>
-    <string name="charging_control_notification_content_target">Battery will be fully charged at %1$s</string>
-    <string name="charging_control_notification_content_target_reached">Battery is charged</string>
+    <string name="charging_control_notification_channel">Controlo de carregamento</string>
+    <string name="charging_control_notification_title">Controlo de carregamento</string>
+    <string name="charging_control_notification_cancel_once">Cancelar</string>
+    <string name="charging_control_notification_content_limit">A bateria será carregada até aos %1$d%</string>
+    <string name="charging_control_notification_content_limit_reached">A bateria está carregada até aos %1$d%%</string>
+    <string name="charging_control_notification_content_target">A bateria estará totalmente carregada aos %1$s</string>
+    <string name="charging_control_notification_content_target_reached">Bateria carregada</string>
     <!-- Pocket Lock -->
     <string name="pocket_lock_message_long_press">Para desbloquear pressione e mantenha pressionado o botão de ligar</string>
 </resources>
