@@ -188,8 +188,10 @@ public class ThemeOverlayController implements CoreStartable, Dumpable {
             new ConfigurationListener() {
                 @Override
                 public void onUiModeChanged() {
-                    Log.i(TAG, "Re-applying theme on UI change");
-                    reevaluateSystemTheme(true /* forceReload */);
+                    if (mSecureSettings.getInt(Settings.Secure.BERRY_BLACK_THEME, 0) == 1) {
+                        Log.i(TAG, "Re-applying theme on UI change");
+                        reevaluateSystemTheme(true /* forceReload */);
+                    }
                 }
 
                 @Override
