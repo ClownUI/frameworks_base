@@ -3,11 +3,13 @@
     <!-- DataSwitch Tile -->
     <string name="qs_data_switch_label">Veri kartını değiştir</string>
     <string name="qs_data_switch_toast_0">Şu anda SIM kart takılı değil</string>
-    <string name="qs_data_switch_toast_1">Şu anda sadece bir SIM kart takılı</string>
+    <string name="qs_data_switch_toast_1">Şu anda yalnızca bir SIM kart takılı</string>
     <string name="qs_data_switch_text_1">SIM 1</string>
     <string name="qs_data_switch_text_2">SIM 2</string>
     <string name="qs_data_switch_changed_1">Veri kartı SIM 1 olarak değiştirildi.</string>
     <string name="qs_data_switch_changed_2">Veri kartı SIM 2 olarak değiştirildi.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Otomatik parlaklık</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Kafein</string>
     <string name="accessibility_quick_settings_caffeine_off">Kafein kapalı</string>
@@ -17,7 +19,7 @@
     <string name="accessibility_quick_settings_heads_up_off">Bildirim pencereleri kapalı.</string>
     <string name="accessibility_quick_settings_heads_up_on">Bildirim pencereleri açık.</string>
     <!-- AOD QS tile -->
-    <string name="quick_settings_aod_label">SAE</string>
+    <string name="quick_settings_aod_label">AOD</string>
     <string name="quick_settings_aod_off_powersave_label">Sürekli açık ekran kapalı\nPil tasarrufu</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">USB internet paylaşımı</string>
@@ -39,11 +41,11 @@
     <!-- Text while recognizing face -->
     <string name="face_unlock_recognizing">Yüz algılanıyor...</string>
     <!-- Status bar -->
-    <string name="status_bar_icons_title">Durum Çubuğu Simgeleri</string>
+    <string name="status_bar_icons_title">Durum çubuğu simgeleri</string>
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
     <!-- Name of the roaming status bar icon. -->
-    <string name="status_bar_roaming">Roaming indicator</string>
+    <string name="status_bar_roaming">Dolaşım göstergesi</string>
     <!-- Name of the data saver status bar icon. -->
-    <string name="status_bar_data_saver">Data saver</string>
+    <string name="status_bar_data_saver">Veri tasarrufu</string>
 </resources>

@@ -8,6 +8,8 @@
     <string name="qs_data_switch_text_2">SIM 2</string>
     <string name="qs_data_switch_changed_1">데이터 전용 SIM 카드를 SIM 1으로 전환</string>
     <string name="qs_data_switch_changed_2">데이터 전용 SIM 카드를 SIM 2로 전환</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">자동 밝기</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">화면 계속 켜기</string>
     <string name="accessibility_quick_settings_caffeine_off">화면 꺼짐 방지 꺼짐</string>

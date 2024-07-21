@@ -8,6 +8,8 @@
     <string name="qs_data_switch_text_2">SIM 2</string>
     <string name="qs_data_switch_changed_1">Usando SIM 1 para datos móviles.</string>
     <string name="qs_data_switch_changed_2">Usando SIM 2 para datos móviles.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Brillo automático</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Modo cafeína</string>
     <string name="accessibility_quick_settings_caffeine_off">Modo Cafeína desactivado</string>
@@ -43,7 +45,7 @@
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
     <!-- Name of the roaming status bar icon. -->
-    <string name="status_bar_roaming">Roaming indicator</string>
+    <string name="status_bar_roaming">Indicador de Roaming</string>
     <!-- Name of the data saver status bar icon. -->
-    <string name="status_bar_data_saver">Data saver</string>
+    <string name="status_bar_data_saver">Ahorrador de datos</string>
 </resources>

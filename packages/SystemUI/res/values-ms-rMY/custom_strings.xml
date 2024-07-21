@@ -8,17 +8,19 @@
     <string name="qs_data_switch_text_2">SIM 2</string>
     <string name="qs_data_switch_changed_1">Kad data ditukar kepada SIM 1.</string>
     <string name="qs_data_switch_changed_2">Kad data ditukar kepada SIM 2.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Kecerahan automatik</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Kafein</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <string name="accessibility_quick_settings_caffeine_off">Kafein dimatikan</string>
+    <string name="accessibility_quick_settings_caffeine_on">Kafein dihidupkan</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Pemberitahuan pop naik</string>
     <string name="accessibility_quick_settings_heads_up_off">Pemberitahuan pop naik dimatikan.</string>
     <string name="accessibility_quick_settings_heads_up_on">Pemberitahuan pop naik dihidupkan.</string>
     <!-- AOD QS tile -->
     <string name="quick_settings_aod_label">AOD</string>
-    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD nyahaktif\nPenyelamat bateri</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">Penambatan USB</string>
     <!-- PowerShare QS tile -->
@@ -42,7 +44,7 @@
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
     <!-- Name of the roaming status bar icon. -->
-    <string name="status_bar_roaming">Roaming indicator</string>
+    <string name="status_bar_roaming">Penunjuk perayauan</string>
     <!-- Name of the data saver status bar icon. -->
-    <string name="status_bar_data_saver">Data saver</string>
+    <string name="status_bar_data_saver">Penjimat data</string>
 </resources>

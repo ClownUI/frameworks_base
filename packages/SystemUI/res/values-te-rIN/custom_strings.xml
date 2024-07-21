@@ -8,6 +8,8 @@
     <string name="qs_data_switch_text_2">సిమ్ 2</string>
     <string name="qs_data_switch_changed_1">డేటా కార్డ్ సిమ్ 1 కి మార్చబడింది.</string>
     <string name="qs_data_switch_changed_2">డేటా కార్డ్ సిమ్ 2 కి మార్చబడింది.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">స్వయం ప్రకాశత</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">కాఫిన్</string>
     <string name="accessibility_quick_settings_caffeine_off">కెఫిన్ ఆఫ్</string>

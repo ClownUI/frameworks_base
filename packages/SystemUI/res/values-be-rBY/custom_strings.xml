@@ -8,6 +8,8 @@
     <string name="qs_data_switch_text_2">SIM 2</string>
     <string name="qs_data_switch_changed_1">Пераключыць перадачу даных на першую сім-карту.</string>
     <string name="qs_data_switch_changed_2">Пераключыць перадачу даных на другую сім-карту.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Auto brightness</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Кафеін</string>
     <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>

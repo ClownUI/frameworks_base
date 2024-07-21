@@ -8,6 +8,8 @@
     <string name="qs_data_switch_text_2">सिम २</string>
     <string name="qs_data_switch_changed_1">डेटा कार्ड सिम 1 वर स्विच केले.</string>
     <string name="qs_data_switch_changed_2">डेटा कार्ड सिम 2 वर स्विच केले.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Auto brightness</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">कॅफिन</string>
     <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>

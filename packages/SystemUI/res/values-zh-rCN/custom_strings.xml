@@ -8,6 +8,8 @@
     <string name="qs_data_switch_text_2">SIM 2</string>
     <string name="qs_data_switch_changed_1">已将移动数据卡切换到 SIM 卡 1</string>
     <string name="qs_data_switch_changed_2">已将移动数据卡切换到 SIM 卡 2</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">自适应亮度</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">保持亮屏</string>
     <string name="accessibility_quick_settings_caffeine_off">保持亮屏 已关闭</string>
@@ -42,7 +44,7 @@
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
     <!-- Name of the roaming status bar icon. -->
-    <string name="status_bar_roaming">Roaming indicator</string>
+    <string name="status_bar_roaming">漫游指示器</string>
     <!-- Name of the data saver status bar icon. -->
-    <string name="status_bar_data_saver">Data saver</string>
+    <string name="status_bar_data_saver">流量节省程序</string>
 </resources>

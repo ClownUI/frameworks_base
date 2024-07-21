@@ -1,49 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- DataSwitch Tile -->
-    <string name="qs_data_switch_label">Switch data card</string>
-    <string name="qs_data_switch_toast_0">Currently no SIM card is inserted</string>
-    <string name="qs_data_switch_toast_1">Currently only one SIM card is inserted</string>
-    <string name="qs_data_switch_text_1">SIM 1</string>
-    <string name="qs_data_switch_text_2">SIM 2</string>
-    <string name="qs_data_switch_changed_1">Switched data card to SIM 1.</string>
-    <string name="qs_data_switch_changed_2">Switched data card to SIM 2.</string>
+    <string name="qs_data_switch_label">ಡಟಾ ಕಾರ್ಡ್ ಬದಲಿಸಿ</string>
+    <string name="qs_data_switch_toast_0">ಪ್ರಸ್ತುತ ಯಾವುದೇ ಸಿಮ್ ಕಾರ್ಡ್ ಸೇರಿಸಿಲ್ಲ</string>
+    <string name="qs_data_switch_toast_1">ಪ್ರಸ್ತುತ ಕೇವಲ ಒಂದು ಸಿಮ್ ಕಾರ್ಡ್ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="qs_data_switch_text_1">ಸಿಮ್ 1</string>
+    <string name="qs_data_switch_text_2">ಸಿಮ್ 2</string>
+    <string name="qs_data_switch_changed_1">ಡಾಟಾ ಕಾರ್ಡ್ ನ್ನು ಸಿಮ್ 1 ಗೆ ಬದಲಿಸಿದೆ.</string>
+    <string name="qs_data_switch_changed_2">ಡಾಟಾ ಕಾರ್ಡ್ ನ್ನು ಸಿಮ್ 2 ಗೆ ಬದಲಿಸಿದೆ.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Auto brightness</string>
     <!-- Caffeine tile -->
-    <string name="quick_settings_caffeine_label">Caffeine</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+    <string name="quick_settings_caffeine_label">ಕ್ಯಾಫೀನ್</string>
+    <string name="accessibility_quick_settings_caffeine_off">ಕ್ಯಾಫೀನ್ ಆರಿಸಿ</string>
+    <string name="accessibility_quick_settings_caffeine_on">ಕ್ಯಾಫೀನ್ ಆರಂಭಿಸಿ</string>
     <!-- Heads up QS tile -->
-    <string name="quick_settings_heads_up_label">Heads up</string>
-    <string name="accessibility_quick_settings_heads_up_off">Heads up off.</string>
-    <string name="accessibility_quick_settings_heads_up_on">Heads up on.</string>
+    <string name="quick_settings_heads_up_label">ಹೆಡ್ಸ್ ಅಪ್</string>
+    <string name="accessibility_quick_settings_heads_up_off">ಹೆಡ್ಸ್ ಅಪ್ ಆಫ್.</string>
+    <string name="accessibility_quick_settings_heads_up_on">ಹೆಡ್ಸ್ ಅಪ್ ಆನ್.</string>
     <!-- AOD QS tile -->
-    <string name="quick_settings_aod_label">AOD</string>
-    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <string name="quick_settings_aod_label">ಯಾವಾಗಲೂ ಆನ್‌ ಡಿಸ್‌ಪ್ಲೇ</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD ಆಫ್\nಬ್ಯಾಟರಿ ಸೇವರ್</string>
     <!-- USB tethering QS tile -->
-    <string name="quick_settings_usb_tether_label">USB tethering</string>
+    <string name="quick_settings_usb_tether_label">USB ಟೆಥರಿಂಗ್</string>
     <!-- PowerShare QS tile -->
-    <string name="quick_settings_powershare_label">Wireless PowerShare</string>
-    <string name="quick_settings_powershare_off_powersave_label">Wireless PowerShare off\nBattery saver</string>
-    <string name="quick_settings_powershare_off_low_battery_label">Wireless PowerShare off\nBattery too low</string>
-    <string name="quick_settings_powershare_enabled_label">Wireless PowerShare is enabled</string>
+    <string name="quick_settings_powershare_label">ವಯರ್ಲೆಸ್ ಪವರ್ ಶೇರ್</string>
+    <string name="quick_settings_powershare_off_powersave_label">ವೈರ್ಲೆಸ್ ಪವರ್ ಶೇರ್ ಆಫ್\nಬ್ಯಾಟರಿ ಸೇವರ್</string>
+    <string name="quick_settings_powershare_off_low_battery_label">ವೈರ್ಲೆಸ್ ಪವರ್ ಶೇರ್ ಆಫ್\nಬ್ಯಾಟರಿ ಬಹಳ ಕಡಿಮೆ ಇದೆ</string>
+    <string name="quick_settings_powershare_enabled_label">ವಯರ್ಲೆಸ್ ಪವರ್ ಶೇರ್ ಸಕ್ರಿಯವಾಗಿದೆ</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
-        <item quantity="one">%d device connected</item>
-        <item quantity="other">%d devices connected</item>
+        <item quantity="one">%d ಡಿವೈಸ್ ಜೋಡಿಸಲಾಗಿದೆ</item>
+        <item quantity="other">%d ಡಿವೈಸ್ ಗಳನ್ನು ಜೋಡಿಸಲಾಗಿದೆ</item>
     </plurals>
     <!-- Advanced Reboot -->
-    <string name="global_action_restart_advanced">Advanced</string>
-    <string name="global_action_restart_recovery">Recovery</string>
-    <string name="global_action_restart_bootloader">Bootloader</string>
-    <string name="global_action_restart_ui">SystemUI</string>
+    <string name="global_action_restart_advanced">ಉನ್ನತ ಸಂಯೋಜನೆಗಳು</string>
+    <string name="global_action_restart_recovery">ರಿಕವರಿ</string>
+    <string name="global_action_restart_bootloader">ಬೂಟ್‍ಲೋಡರ್</string>
+    <string name="global_action_restart_ui">ಸಿಸ್ಟಮ್ Ui</string>
     <!-- Text while recognizing face -->
-    <string name="face_unlock_recognizing">Recognizing face...</string>
+    <string name="face_unlock_recognizing">ಮುಖವನ್ನು ಗುರುತಿಸಲಾಗುತ್ತಿದೆ...</string>
     <!-- Status bar -->
-    <string name="status_bar_icons_title">Status bar icons</string>
+    <string name="status_bar_icons_title">ಸ್ಟೇಟಸ್ ಬಾರ್ ಐಕಾನ್ಗಳು</string>
     <!-- Name of the VPN status bar icon. -->
-    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_vpn">ವಿಪಿಎನ್</string>
     <!-- Name of the roaming status bar icon. -->
-    <string name="status_bar_roaming">Roaming indicator</string>
+    <string name="status_bar_roaming">ರೋಮಿಂಗ್ ಸೂಚಕ</string>
     <!-- Name of the data saver status bar icon. -->
-    <string name="status_bar_data_saver">Data saver</string>
+    <string name="status_bar_data_saver">ಡೇಟಾ ಸೇವರ್</string>
 </resources>

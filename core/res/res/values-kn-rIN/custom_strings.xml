@@ -16,51 +16,51 @@
 -->
 <resources>
     <!-- Advanced reboot -->
-    <string name="reboot_to_recovery_title">Recovery</string>
-    <string name="reboot_to_recovery_message">Name</string>
-    <string name="reboot_to_bootloader_title">Bootloader</string>
-    <string name="reboot_to_bootloader_message">Hi</string>
-    <string name="reboot_title">I am busy</string>
-    <string name="reboot_message">Rebooting system</string>
+    <string name="reboot_to_recovery_title">ರಿಕವರಿ</string>
+    <string name="reboot_to_recovery_message">ರಿಕವರಿಗೆ ರೀಬೂಟ್ ಆಗುತ್ತಿದೆ</string>
+    <string name="reboot_to_bootloader_title">ಬೂಟ್‍ಲೋಡರ್</string>
+    <string name="reboot_to_bootloader_message">ಬೂಟ್ಲೊಡರ್ ಗೆ ರೀಬೂಟ್ ಆಗುತ್ತಿದೆ</string>
+    <string name="reboot_title">ರೀಬೂಟ್‌‌</string>
+    <string name="reboot_message">ಸಿಸ್ಟಮ್ ಅನ್ನು ರೀಬೂಟ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
     <!-- Alert slider proc nodes paths. -->
     <string name="alert_slider_state_path"></string>
     <string name="alert_slider_uevent_match_path"></string>
     <!-- Button that copies the url to the log of a crashed application -->
-    <string name="aerr_copy">Copy crash log URL</string>
+    <string name="aerr_copy">ಕ್ರ್ಯಾಶ್ ಲಾಗ್ ಯು. ಆರ್. ಎಲ್. ನಕಲಿಸು</string>
     <string name="url_copy_success">URL copied successfully</string>
-    <string name="url_copy_failed">An error occured while uploading the log to Memochō</string>
+    <string name="url_copy_failed">An error occured while uploading the log to mkr/bin</string>
     <!-- Cycle through ringer modes -->
     <string name="volume_dialog_ringer_guidance_normal">Calls and notifications will ring</string>
     <!-- LiveDisplay strings -->
-    <string name="live_display_auto">Automatic</string>
-    <string name="live_display_auto_summary">Automatically adjust color temperature of screen after sunset and sunrise</string>
+    <string name="live_display_auto">ಸ್ವಯಂಚಾಲಿತ</string>
+    <string name="live_display_auto_summary">ಸೂರ್ಯೋದಯ ಮತ್ತು ಸೂರ್ಯಾಸ್ತದ ನಂತರ ಪರದೆ‌ ಬಣ್ಣದ ತಾಪವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಹೊಂದಾಣಿಕೆ ಮಾಡಿ</string>
     <string name="live_display_off">Off</string>
-    <string name="live_display_off_summary">Disable all adjustments</string>
+    <string name="live_display_off_summary">ಎಲ್ಲಾ ಹೊಂದಾಣಿಕೆಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ</string>
     <string name="live_display_day">Day</string>
-    <string name="live_display_day_summary">Use day settings only</string>
+    <string name="live_display_day_summary">ಹಗಲಿನ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಮಾತ್ರ ಬಳಸಿ</string>
     <string name="live_display_night">Night</string>
-    <string name="live_display_night_summary">Use night settings only</string>
-    <string name="live_display_outdoor">Outdoor (bright sun)</string>
-    <string name="live_display_outdoor_summary">Use outdoor settings only</string>
-    <string name="live_display_hint">LiveDisplay can help reduce eyestrain and help you sleep at night. Click here to try it out!</string>
-    <string name="accessibility_quick_settings_live_display_off">LiveDisplay off.</string>
-    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: auto mode.</string>
-    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: day mode.</string>
-    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: night mode.</string>
-    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: outdoor mode.</string>
-    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay turned off.</string>
-    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay changed to auto mode.</string>
-    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay changed to day mode.</string>
-    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay changed to night mode.</string>
-    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay changed to outdoor mode.</string>
+    <string name="live_display_night_summary">ರಾತ್ರಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಮಾತ್ರ ಬಳಸಿ</string>
+    <string name="live_display_outdoor">ಹೊರಾಂಗಣ (ಪ್ರಖರ ಸೂರ್ಯ)</string>
+    <string name="live_display_outdoor_summary">ಹೊರಾಂಗಣ ಸಂಯೋಜನೆಗಳನ್ನು ಮಾತ್ರ ಬಳಸಿ</string>
+    <string name="live_display_hint">ಕಣ್ಣಿನ ಆಯಾಸವನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಮತ್ತು ರಾತ್ರಿ ಸುನಿದ್ರೆಗೆ LiveDisplay ನೆರವಾಗುತ್ತದೆ. ಪ್ರಯತ್ನಿಸಲು ಇಲ್ಲಿ ಒತ್ತಿ!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay ಆಫ್.</string>
+    <string name="accessibility_quick_settings_live_display_auto">ಲೈವ್ ಡಿಸ್ಪ್ಲೇ: ಸ್ವಯಂಚಾಲಿತ ಮಾದರಿ.</string>
+    <string name="accessibility_quick_settings_live_display_day">ಲೈವ್ ಡಿಸ್ಪ್ಲೇ: ಹೊರಾಂಗಣ ಮಾದರಿ.</string>
+    <string name="accessibility_quick_settings_live_display_night">ಲೈವ್ ಡಿಸ್ಪ್ಲೇ: ರಾತ್ರಿ ಮಾದರಿ.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">ಲೈವ್ ಡಿಸ್ಪ್ಲೇ: ಹೊರಾಂಗಣ ಮಾದರಿ.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">ಲೈವ್ ಡಿಸ್ಪ್ಲೇ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದೆ.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">ಲೈವ್ ಡಿಸ್ಪ್ಲೇ ಸ್ವಯಂಚಾಲಿತ ಮಾದರಿಗೆ ಬದಲಾಯಿಸಲಾಗಿದೆ.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">ಲೈವ್ ಡಿಸ್ಪ್ಲೇ: ದಿನ ಮಾದರಿಗೆ ಬದಲಾಯಿಸಲಗಿದೆ.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">ಲೈವ್ ಡಿಸ್ಪ್ಲೇಯನ್ನು ರಾತ್ರಿ ಮಾದರಿಗೆ ಬದಲಾಯಿಸಲಾಗಿದೆ.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">ಲೈವ್ ಡಿಸ್ಪ್ಲೇಯನ್ನು ಹೊರಾಂಗಣ ಮಾದರಿಗೆ ಬದಲಾಯಿಸಲಾಗಿದೆ.</string>
     <!-- Health interface -->
-    <string name="charging_control_notification_channel">Charging control</string>
-    <string name="charging_control_notification_title">Charging control</string>
-    <string name="charging_control_notification_cancel_once">Cancel</string>
-    <string name="charging_control_notification_content_limit">Battery will be charged to %1$d%%</string>
-    <string name="charging_control_notification_content_limit_reached">Battery is charged to %1$d%%</string>
-    <string name="charging_control_notification_content_target">Battery will be fully charged at %1$s</string>
-    <string name="charging_control_notification_content_target_reached">Battery is charged</string>
+    <string name="charging_control_notification_channel">ಚಾರ್ಜಿಂಗ್ ನಿಯಂತ್ರಣ</string>
+    <string name="charging_control_notification_title">ಚಾರ್ಜಿಂಗ್ ನಿಯಂತ್ರಣ</string>
+    <string name="charging_control_notification_cancel_once">ರದ್ದುಮಾಡಿ</string>
+    <string name="charging_control_notification_content_limit">ಬ್ಯಾಟರಿಯನ್ನು %1$d%%ವರೆಗೆ ಚಾರ್ಜ್ ಮಾಡಲಾಗುವುದು</string>
+    <string name="charging_control_notification_content_limit_reached">ಬ್ಯಾಟರಿಯನ್ನು %1$d%%ವರೆಗೆ ಚಾರ್ಜ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="charging_control_notification_content_target">ಬ್ಯಾಟರಿ %1$s ಗೆ ಪೂರ್ಣ ಚಾರ್ಜ್ ಆಗುವುದು</string>
+    <string name="charging_control_notification_content_target_reached">ಬ್ಯಾಟರಿ ಚಾರ್ಜ್ ಆಗಿದೆ</string>
     <!-- Pocket Lock -->
-    <string name="pocket_lock_message_long_press">Press and hold power button to unlock</string>
+    <string name="pocket_lock_message_long_press">ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಪವರ್ ಬಟನ್ ಒತ್ತಿ ಹಿಡಿದುಕೊಳ್ಳಿ</string>
 </resources>

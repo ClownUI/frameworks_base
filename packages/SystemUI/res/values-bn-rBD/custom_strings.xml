@@ -8,6 +8,8 @@
     <string name="qs_data_switch_text_2">সিম ২</string>
     <string name="qs_data_switch_changed_1">ডেটা কার্ড সিম ১ এ নিয়োজিত হয়েছে.</string>
     <string name="qs_data_switch_changed_2">ডেটা মোড সিম ২ তে নিয়োজিত হয়েছে.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">স্বয়ংক্রিয় উজ্জ্বলতা</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">ক্যাফেইন</string>
     <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>

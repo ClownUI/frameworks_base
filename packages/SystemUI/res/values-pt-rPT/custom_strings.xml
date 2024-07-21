@@ -8,6 +8,8 @@
     <string name="qs_data_switch_text_2">SIM 2</string>
     <string name="qs_data_switch_changed_1">Trocar cartão de dados para o SIM 1.</string>
     <string name="qs_data_switch_changed_2">Trocar o cartão de dados para o SIM 2.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Brilho automático</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Cafeína</string>
     <string name="accessibility_quick_settings_caffeine_off">Cafeína desligada</string>

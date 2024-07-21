@@ -8,6 +8,8 @@
     <string name="qs_data_switch_text_2">SIM 2</string>
     <string name="qs_data_switch_changed_1">Přepnout datovou kartu na SIM 1.</string>
     <string name="qs_data_switch_changed_2">Přepnout datovou kartu na SIM 2.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Automatický jas</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Kofein</string>
     <string name="accessibility_quick_settings_caffeine_off">Kofein vyp.</string>
@@ -45,7 +47,7 @@
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
     <!-- Name of the roaming status bar icon. -->
-    <string name="status_bar_roaming">Roaming indicator</string>
+    <string name="status_bar_roaming">Indikátor roamingu</string>
     <!-- Name of the data saver status bar icon. -->
-    <string name="status_bar_data_saver">Data saver</string>
+    <string name="status_bar_data_saver">Spořič dat</string>
 </resources>

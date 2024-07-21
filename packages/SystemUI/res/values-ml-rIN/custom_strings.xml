@@ -8,6 +8,8 @@
     <string name="qs_data_switch_text_2">സിം 2</string>
     <string name="qs_data_switch_changed_1">ഡാറ്റ കാർഡ് സിം 1-ലേക്ക് മാറ്റി.</string>
     <string name="qs_data_switch_changed_2">ഡാറ്റ കാർഡ് സിം 2-ലേക്ക് മാറ്റി.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">സ്വയമേയുള്ള തെളിച്ചം</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">കഫീൻ</string>
     <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>

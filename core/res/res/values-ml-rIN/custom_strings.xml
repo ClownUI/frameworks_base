@@ -17,31 +17,31 @@
 <resources>
     <!-- Advanced reboot -->
     <string name="reboot_to_recovery_title">Recovery</string>
-    <string name="reboot_to_recovery_message">Rebooting to recovery</string>
+    <string name="reboot_to_recovery_message">റിക്കവയിലേക്കു റീബൂട്ട് ചെയ്യുന്നു</string>
     <string name="reboot_to_bootloader_title">Bootloader</string>
-    <string name="reboot_to_bootloader_message">Rebooting to bootloader</string>
-    <string name="reboot_title">Reboot</string>
-    <string name="reboot_message">Rebooting system</string>
+    <string name="reboot_to_bootloader_message">ബൂട്ട്ലോഡറിലേക്ക് റീബൂട്ട് ചെയ്യുന്നു</string>
+    <string name="reboot_title">റീബൂട്ട്</string>
+    <string name="reboot_message">സിസ്റ്റം റീബൂട്ട് ചെയ്യുന്നു</string>
     <!-- Alert slider proc nodes paths. -->
     <string name="alert_slider_state_path"></string>
     <string name="alert_slider_uevent_match_path"></string>
     <!-- Button that copies the url to the log of a crashed application -->
-    <string name="aerr_copy">Copy crash log URL</string>
-    <string name="url_copy_success">URL copied successfully</string>
-    <string name="url_copy_failed">An error occured while uploading the log to Memochō</string>
+    <string name="aerr_copy">ക്രാഷ് ലോഗ് ലിങ്ക് പകർത്തുക</string>
+    <string name="url_copy_success">ലിങ്ക് വിജയകരമായി പകർത്തി</string>
+    <string name="url_copy_failed">An error occured while uploading the log to mkr/bin</string>
     <!-- Cycle through ringer modes -->
     <string name="volume_dialog_ringer_guidance_normal">Calls and notifications will ring</string>
     <!-- LiveDisplay strings -->
-    <string name="live_display_auto">Automatic</string>
-    <string name="live_display_auto_summary">Automatically adjust color temperature of screen after sunset and sunrise</string>
+    <string name="live_display_auto">ഓട്ടോമാറ്റിക്</string>
+    <string name="live_display_auto_summary">സൂര്യാസ്തമയത്തിനും സൂര്യോദയത്തിനും ശേഷം സ്ക്രീനിന്റെ കളര്‍ താപനില സ്വയം ക്രമീകരിക്കുക</string>
     <string name="live_display_off">Off</string>
-    <string name="live_display_off_summary">Disable all adjustments</string>
+    <string name="live_display_off_summary">എല്ലാ ക്രമീകരണങ്ങളും നിർത്തുക</string>
     <string name="live_display_day">Day</string>
-    <string name="live_display_day_summary">Use day settings only</string>
+    <string name="live_display_day_summary">പകല്‍ ക്രമീകരണങ്ങൾ മാത്രം ഉപയോഗിക്കുക</string>
     <string name="live_display_night">Night</string>
-    <string name="live_display_night_summary">Use night settings only</string>
-    <string name="live_display_outdoor">Outdoor (bright sun)</string>
-    <string name="live_display_outdoor_summary">Use outdoor settings only</string>
+    <string name="live_display_night_summary">രാത്രി ക്രമീകരണങ്ങൾ മാത്രം ഉപയോഗിക്കുക</string>
+    <string name="live_display_outdoor">ഔട്ട്ഡോർ (തെളിഞ്ഞ സൂര്യൻ)</string>
+    <string name="live_display_outdoor_summary">ഔട്ട്ഡോർ ക്രമീകരണങ്ങൾ മാത്രം ഉപയോഗിക്കുക</string>
     <string name="live_display_hint">LiveDisplay can help reduce eyestrain and help you sleep at night. Click here to try it out!</string>
     <string name="accessibility_quick_settings_live_display_off">LiveDisplay off.</string>
     <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: auto mode.</string>

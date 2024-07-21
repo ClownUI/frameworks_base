@@ -8,6 +8,8 @@
     <string name="qs_data_switch_text_2">SIM 2</string>
     <string name="qs_data_switch_changed_1">Datenkarte auf SIM 1 gewechselt.</string>
     <string name="qs_data_switch_changed_2">Datenkarte auf SIM 2 gewechselt.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Automatische Helligkeit</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Koffein</string>
     <string name="accessibility_quick_settings_caffeine_off">Koffein aus</string>
@@ -18,7 +20,7 @@
     <string name="accessibility_quick_settings_heads_up_on">Pop-up-Benachrichtigungen an.</string>
     <!-- AOD QS tile -->
     <string name="quick_settings_aod_label">Always On Display</string>
-    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <string name="quick_settings_aod_off_powersave_label">Always-On-Display aus\nEnergiesparmodus</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">USB Tethering</string>
     <!-- PowerShare QS tile -->
@@ -43,7 +45,7 @@
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
     <!-- Name of the roaming status bar icon. -->
-    <string name="status_bar_roaming">Roaming indicator</string>
+    <string name="status_bar_roaming">Roaming-Indikator</string>
     <!-- Name of the data saver status bar icon. -->
-    <string name="status_bar_data_saver">Data saver</string>
+    <string name="status_bar_data_saver">Datensparmodus</string>
 </resources>

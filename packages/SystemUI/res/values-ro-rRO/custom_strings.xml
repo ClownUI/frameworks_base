@@ -8,6 +8,8 @@
     <string name="qs_data_switch_text_2">SIM 2</string>
     <string name="qs_data_switch_changed_1">S-a schimbat cardul de date la SIM 1.</string>
     <string name="qs_data_switch_changed_2">S-a schimbat cardul de date la SIM 2.</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Luminozitate automată</string>
     <!-- Caffeine tile -->
     <string name="quick_settings_caffeine_label">Cofeină</string>
     <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
