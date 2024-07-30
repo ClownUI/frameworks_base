@@ -157,7 +157,7 @@ public final class BatteryService extends SystemService {
     private int mLastMaxChargingVoltage;
     private int mLastChargeCounter;
     private int mLastBatteryCycleCount;
-    private int mLastCharingState;
+    private int mLastChargingState;
     private int mLastBatteryFullCharge;
     private int mLastBatteryFullChargeDesign;
     /**
@@ -559,7 +559,7 @@ public final class BatteryService extends SystemService {
                         || mHealthInfo.batteryFullChargeUah != mLastBatteryFullCharge
                         || mHealthInfo.batteryFullChargeDesignCapacityUah != mLastBatteryFullChargeDesign
                         || mHealthInfo.batteryCycleCount != mLastBatteryCycleCount
-                        || mHealthInfo.chargingState != mLastCharingState)) {
+                        || mHealthInfo.chargingState != mLastChargingState)) {
 
             if (mPlugType != mLastPlugType) {
                 if (mLastPlugType == BATTERY_PLUGGED_NONE) {
@@ -742,7 +742,7 @@ public final class BatteryService extends SystemService {
             mLastBatteryLevelCritical = mBatteryLevelCritical;
             mLastInvalidCharger = mInvalidCharger;
             mLastBatteryCycleCount = mHealthInfo.batteryCycleCount;
-            mLastCharingState = mHealthInfo.chargingState;
+            mLastChargingState = mHealthInfo.chargingState;
             mLastBatteryFullCharge = mHealthInfo.batteryFullChargeUah;
             mLastBatteryFullChargeDesign = mHealthInfo.batteryFullChargeDesignCapacityUah;
         }
