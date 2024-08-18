@@ -16,7 +16,7 @@
 -->
 <resources>
     <!-- Advanced reboot -->
-    <string name="reboot_to_recovery_title">Modo recuperación</string>
+    <string name="reboot_to_recovery_title">Modo de recuperación</string>
     <string name="reboot_to_recovery_message">Reiniciando en modo recuperación</string>
     <string name="reboot_to_bootloader_title">Modo Bootloader</string>
     <string name="reboot_to_bootloader_message">Reiniciando en modo gestor de arranque</string>
@@ -28,7 +28,7 @@
     <!-- Button that copies the url to the log of a crashed application -->
     <string name="aerr_copy">Copiar URL del registro de errores</string>
     <string name="url_copy_success">URL copiada con éxito</string>
-    <string name="url_copy_failed">An error occured while uploading the log to mkr/bin</string>
+    <string name="url_copy_failed">Se produjo un error al cargar el registro en mkr/bin</string>
     <!-- Cycle through ringer modes -->
     <string name="volume_dialog_ringer_guidance_normal">Llamadas y notificaciones sonarán</string>
     <!-- LiveDisplay strings -->
@@ -41,7 +41,7 @@
     <string name="live_display_night">Noche</string>
     <string name="live_display_night_summary">Utilizar solo los ajustes de noche</string>
     <string name="live_display_outdoor">Al aire libre (luz del sol)</string>
-    <string name="live_display_outdoor_summary">Usar sólo la configuración para el exterior</string>
+    <string name="live_display_outdoor_summary">Usar únicamente entornos exteriores</string>
     <string name="live_display_hint">LiveDisplay puede reducir la fatiga visual y ayudarte a dormir por la noche. ¡Toca aquí para probarlo!</string>
     <string name="accessibility_quick_settings_live_display_off">LiveDisplay apagado.</string>
     <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: modo automático.</string>

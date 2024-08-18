@@ -17,7 +17,7 @@
 <resources>
     <!-- Advanced reboot -->
     <string name="reboot_to_recovery_title">Recovery</string>
-    <string name="reboot_to_recovery_message">Перезагрузка в режим восстановления</string>
+    <string name="reboot_to_recovery_message">Перезагрузка в recovery</string>
     <string name="reboot_to_bootloader_title">Режим загрузчика</string>
     <string name="reboot_to_bootloader_message">Перезагрузка в режим загрузчика</string>
     <string name="reboot_title">Перезагрузка</string>
@@ -26,9 +26,9 @@
     <string name="alert_slider_state_path"></string>
     <string name="alert_slider_uevent_match_path"></string>
     <!-- Button that copies the url to the log of a crashed application -->
-    <string name="aerr_copy">Скопировать ссылку лога ошибки</string>
+    <string name="aerr_copy">Скопировать ссылку лога сбоя</string>
     <string name="url_copy_success">Ссылка скопирована успешно</string>
-    <string name="url_copy_failed">An error occured while uploading the log to mkr/bin</string>
+    <string name="url_copy_failed">Произошла ошибка при загрузке лога в mkr/bin</string>
     <!-- Cycle through ringer modes -->
     <string name="volume_dialog_ringer_guidance_normal">Звуковой сигнал для звонков и уведомлений</string>
     <!-- LiveDisplay strings -->
@@ -41,18 +41,18 @@
     <string name="live_display_night">Ночь</string>
     <string name="live_display_night_summary">Использовать только ночные настройки</string>
     <string name="live_display_outdoor">На улице (яркое солнце)</string>
-    <string name="live_display_outdoor_summary">Только режим «На улице»</string>
-    <string name="live_display_hint">LiveDisplay помогает снизить напряжение глаз и улучшает ночной сон. Нажмите здесь, чтобы попробовать!</string>
+    <string name="live_display_outdoor_summary">Использовать только режим «на улице»</string>
+    <string name="live_display_hint">LiveDisplay может помочь снизить напряжение глаз и улучшить сон. Нажмите здесь, чтобы попробовать!</string>
     <string name="accessibility_quick_settings_live_display_off">LiveDisplay выключен.</string>
     <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: автоматический режим.</string>
     <string name="accessibility_quick_settings_live_display_day">LiveDisplay: дневной режим.</string>
     <string name="accessibility_quick_settings_live_display_night">LiveDisplay: ночной режим.</string>
-    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: режим «На улице».</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: режим «на улице».</string>
     <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay выключен.</string>
     <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay переключен в автоматический режим.</string>
     <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay переключен на дневной режим.</string>
     <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay переключен на ночной режим.</string>
-    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay переключен в режим «На улице».</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay переключен в режим «на улице».</string>
     <!-- Health interface -->
     <string name="charging_control_notification_channel">Управление зарядкой</string>
     <string name="charging_control_notification_title">Управление зарядкой</string>
