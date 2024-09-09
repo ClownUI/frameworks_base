@@ -354,6 +354,7 @@ public class NotificationMediaManager implements Dumpable, TunerService.Tunable 
 
     public void removeCallback(MediaListener callback) {
         mMediaListeners.remove(callback);
+        mTunerService.removeTunable(this);
     }
 
     public void findAndUpdateMediaNotifications() {
