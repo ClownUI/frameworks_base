@@ -59,6 +59,7 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
 import android.os.PowerManager;
+import android.os.Process;
 import android.os.RemoteException;
 import android.os.SystemProperties;
 import android.os.Trace;
@@ -192,6 +193,7 @@ public class GlobalActionsDialogLite implements DialogInterface.OnDismissListene
     private static final String GLOBAL_ACTION_KEY_REBOOT_RECOVERY = "reboot_recovery";
     private static final String GLOBAL_ACTION_KEY_REBOOT_BOOTLOADER = "reboot_bootloader";
     private static final String GLOBAL_ACTION_KEY_REBOOT_FASTBOOT = "reboot_fastboot";
+    private static final String GLOBAL_ACTION_KEY_REBOOT_SYSTEMUI = "reboot_systemui";
 
     // See NotificationManagerService#scheduleDurationReachedLocked
     private static final long TOAST_FADE_TIME = 333;
@@ -685,6 +687,7 @@ public class GlobalActionsDialogLite implements DialogInterface.OnDismissListene
         RebootRecoveryAction rbtRecoveryAction = new RebootRecoveryAction();
         RebootBootloaderAction rbtBlAction = new RebootBootloaderAction();
         RebootFastbootAction rbtFbAction = new RebootFastbootAction();
+        RebootSystemUIAction rbtsysuiAction = new RebootSystemUIAction();
         ArraySet<String> addedKeys = new ArraySet<>();
         List<Action> tempActions = new ArrayList<>();
         CurrentUserProvider currentUser = new CurrentUserProvider();
@@ -734,6 +737,8 @@ public class GlobalActionsDialogLite implements DialogInterface.OnDismissListene
                 addIfShouldShowAction(tempActions, rbtBlAction);
             } else if (advancedRebootEnabled(mContext) && GLOBAL_ACTION_KEY_REBOOT_FASTBOOT.equals(actionKey) && isFastbootAvailable()) {
                 addIfShouldShowAction(tempActions, rbtFbAction);
+            } else if (advancedRebootEnabled(mContext) && GLOBAL_ACTION_KEY_REBOOT_SYSTEMUI.equals(actionKey)) {
+                addIfShouldShowAction(tempActions, rbtsysuiAction);
             } else if (GLOBAL_ACTION_KEY_SCREENSHOT.equals(actionKey)) {
                 addIfShouldShowAction(tempActions, new ScreenshotAction());
             } else if (GLOBAL_ACTION_KEY_LOGOUT.equals(actionKey)) {
@@ -1186,6 +1191,28 @@ public class GlobalActionsDialogLite implements DialogInterface.OnDismissListene
         @Override
         public void onPress() {
             mWindowManagerFuncs.reboot(false, PowerManager.REBOOT_FASTBOOT);
+        }
+    }
+
+    final class RebootSystemUIAction extends SinglePressAction {
+        RebootSystemUIAction() {
+            super(com.android.systemui.res.R.drawable.ic_restart_systemui, com.android.systemui.res.R.string.global_action_reboot_systemui);
+        }
+        @Override
+        public boolean showDuringKeyguard() {
+            return true;
+        }
+        @Override
+        public boolean showBeforeProvisioning() {
+            return true;
+        }
+        @Override
+        public void onPress() {
+            // No time and need to dismiss the dialog here, just kill systemui straight after telling to
+            // policy/GlobalActions that we hid the dialog within the kill action itself so its onStatusBarConnectedChanged
+            // won't show the LegacyGlobalActions after systemui restart
+            mWindowManagerFuncs.onGlobalActionsHidden();
+            Process.killProcess(Process.myPid());
         }
     }
 
