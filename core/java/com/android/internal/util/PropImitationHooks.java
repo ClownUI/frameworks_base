@@ -86,15 +86,15 @@ public class PropImitationHooks {
     private static final ComponentName GMS_ADD_ACCOUNT_ACTIVITY = ComponentName.unflattenFromString(
             "com.google.android.gms/.auth.uiflows.minutemaid.MinuteMaidActivity");
 
-    private static final Map<String, String> sPixelNineProps = Map.of(
-            "PRODUCT", "caiman",
-            "DEVICE", "caiman",
-            "HARDWARE", "caiman",
+    private static final Map<String, String> sPixelNineXLProps = Map.of(
+            "PRODUCT", "komodo",
+            "DEVICE", "komodo",
+            "HARDWARE", "komodo",
             "MANUFACTURER", "Google",
             "BRAND", "google",
-            "MODEL", "Pixel 9 Pro",
-            "ID", "AD1A.240905.004",
-            "FINGERPRINT", "google/caiman/caiman:14/AD1A.240905.004/12196292:user/release-keys"
+            "MODEL", "Pixel 9 Pro XL",
+            "ID", "AP3A.241005.015",
+            "FINGERPRINT", "google/komodo/komodo:15/AP3A.241005.015/12366759:user/release-keys"
     );
 
     private static final Map<String, String> sPixelFiveProps = Map.of(
@@ -104,7 +104,7 @@ public class PropImitationHooks {
             "MANUFACTURER", "Google",
             "BRAND", "google",
             "MODEL", "Pixel 5a",
-            "ID", "AP2A.240805.004",
+            "ID", "AP2A.240805.005",
             "FINGERPRINT", "google/barbet/barbet:14/AP2A.240805.005/12025142:user/release-keys"
     );
 
@@ -139,6 +139,8 @@ public class PropImitationHooks {
     );
 
     private static final Set<String> sPixelFeatures = Set.of(
+            "GOOGLE_BUILD",
+            "GOOGLE_EXPERIENCE",
             "PIXEL_2017_EXPERIENCE",
             "PIXEL_2017_PRELOAD",
             "PIXEL_2018_EXPERIENCE",
@@ -240,8 +242,8 @@ public class PropImitationHooks {
                     dlog("Spoofing Pixel Tablet for: " + packageName + " process: " + processName);
                     setProps(sPixelTabletProps);
                 } else {
-                    dlog("Spoofing Pixel 9 Pro for: " + packageName + " process: " + processName);
-                    setProps(sPixelNineProps);
+                    dlog("Spoofing Pixel 9 Pro XL for: " + packageName + " process: " + processName);
+                    setProps(sPixelNineXLProps);
                 }
                 return;
             case PACKAGE_GPHOTOS:
