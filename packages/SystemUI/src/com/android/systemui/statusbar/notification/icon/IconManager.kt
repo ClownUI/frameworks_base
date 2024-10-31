@@ -168,8 +168,8 @@ constructor(
                 Settings.System.STATUSBAR_NOTIF_COUNT, 0, UserHandle.USER_CURRENT) == 1
 
             try {
-                setIcon(entry, normalIconDescriptor, sbIcon, iconStyle, showCount, false)
-                setIcon(entry, sensitiveIconDescriptor, shelfIcon, iconStyle, false, false)
+                setIcon(entry, normalIconDescriptor, sbIcon, iconStyle, showCount, true)
+                setIcon(entry, sensitiveIconDescriptor, shelfIcon, iconStyle, false, true)
                 setIcon(entry, sensitiveIconDescriptor, aodIcon, false, false, false)
                 entry.icons = IconPack.buildPack(sbIcon, shelfIcon, aodIcon, entry.icons)
             } catch (e: InflationException) {
