@@ -267,7 +267,7 @@ public class TriStateUiControllerImpl implements TriStateUiController,
                 checkOrientationType();
             }
         };
-        mIntentAction = context.getResources().getString(com.android.internal.R.string.config_alertSliderIntent);
+        mIntentAction = context.getResources().getString(R.string.config_alertSliderIntent);
         mIntentActionSupported = mIntentAction != null && !mIntentAction.isEmpty();
 
         IntentFilter filter = new IntentFilter();
@@ -453,7 +453,7 @@ public class TriStateUiControllerImpl implements TriStateUiController,
                         break;
                 }
 
-                int triStatePos = res.getInteger(com.android.internal.R.integer.config_alertSliderLocation);
+                int triStatePos = res.getInteger(R.integer.config_alertSliderLocation);
                 boolean isTsKeyRight = true;
                 if (triStatePos == TRI_STATE_UI_POSITION_LEFT) {
                     isTsKeyRight = false;
