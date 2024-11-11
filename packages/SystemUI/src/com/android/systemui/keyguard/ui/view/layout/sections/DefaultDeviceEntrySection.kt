@@ -46,6 +46,7 @@ import com.android.systemui.plugins.FalsingManager
 import com.android.systemui.res.R
 import com.android.systemui.shade.NotificationPanelView
 import com.android.systemui.statusbar.VibratorHelper
+import com.android.systemui.tuner.TunerService
 import dagger.Lazy
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
@@ -68,6 +69,7 @@ constructor(
     private val deviceEntryBackgroundViewModel: Lazy<DeviceEntryBackgroundViewModel>,
     private val falsingManager: Lazy<FalsingManager>,
     private val vibratorHelper: Lazy<VibratorHelper>,
+    private val tunerService: TunerService,
 ) : KeyguardSection() {
     private val deviceEntryIconViewId = R.id.device_entry_icon_view
 
@@ -86,7 +88,7 @@ constructor(
 
         val view =
             if (DeviceEntryUdfpsRefactor.isEnabled) {
-                DeviceEntryIconView(context, null).apply { id = deviceEntryIconViewId }
+                DeviceEntryIconView(context, null, 0, tunerService).apply { id = deviceEntryIconViewId }
             } else {
                 // KeyguardBottomAreaRefactor.isEnabled or MigrateClocksToBlueprint.isEnabled
                 LockIconView(context, null).apply { id = R.id.lock_icon_view }
