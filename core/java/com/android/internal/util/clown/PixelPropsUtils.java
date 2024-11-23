@@ -61,24 +61,6 @@ public final class PixelPropsUtils {
     private static final Map<String, Object> propsToChangeBS4;
     private static final Map<String, Object> propsToChangeK70;
 
-    private static final String[] pTensorCodenames = {
-            "comet",
-            "komodo",
-            "caiman",
-            "tokay",
-            "akita",
-            "husky",
-            "shiba",
-            "felix",
-            "tangorpro",
-            "lynx",
-            "cheetah",
-            "panther",
-            "bluejay",
-            "oriole",
-            "raven"
-    };
-
     // Packages to Spoof as the most recent Pixel device
     private static final String[] packagesToChangeRecentPixel = {
             "com.android.vending",
