@@ -50,7 +50,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.launch
 import android.provider.Settings
 import android.os.UserHandle
-import com.android.internal.util.crdroid.Utils
+import com.android.internal.util.clown.Utils
 
 @ExperimentalCoroutinesApi
 object DeviceEntryIconViewBinder {
@@ -79,7 +79,7 @@ object DeviceEntryIconViewBinder {
         overrideColor: Color? = null,
     ) {
         val packageInstalled = Utils.isPackageInstalled(
-            view.context, "com.crdroid.udfps.icons"
+            view.context, "com.clown.udfps.icons"
         )
 
         val shouldUseCustomUdfpsIcon: StateFlow<Boolean> = callbackFlow {

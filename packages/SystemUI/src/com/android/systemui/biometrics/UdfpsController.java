@@ -888,8 +888,8 @@ public class UdfpsController implements DozeReceiver, Dumpable {
             );
         }
 
-        if (com.android.internal.util.crdroid.Utils.isPackageInstalled(mContext,
-                "com.crdroid.udfps.animations")) {
+        if (com.android.internal.util.clown.Utils.isPackageInstalled(mContext,
+                "com.clown.udfps.animations")) {
             updateUdfpsAnimation();
             mConfigurationController.addCallback(mConfigurationListener);
         }

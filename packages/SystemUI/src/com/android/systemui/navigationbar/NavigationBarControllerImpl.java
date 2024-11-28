@@ -46,7 +46,7 @@ import androidx.annotation.Nullable;
 import com.android.internal.R;
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.internal.statusbar.RegisterStatusBarResult;
-import com.android.internal.util.crdroid.Utils;
+import com.android.internal.util.clown.Utils;
 import com.android.settingslib.applications.InterestingConfigChanges;
 import com.android.systemui.Dumpable;
 import com.android.systemui.dagger.SysUISingleton;

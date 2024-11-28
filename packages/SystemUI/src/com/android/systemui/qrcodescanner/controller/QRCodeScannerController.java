@@ -32,7 +32,7 @@ import android.provider.Settings;
 import android.util.Log;
 
 import com.android.internal.config.sysui.SystemUiDeviceConfigFlags;
-import com.android.internal.util.crdroid.Utils;
+import com.android.internal.util.clown.Utils;
 import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.settings.UserTracker;

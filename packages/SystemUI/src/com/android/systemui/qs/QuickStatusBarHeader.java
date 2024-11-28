@@ -38,7 +38,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.android.systemui.res.R;
-import com.android.systemui.crdroid.header.StatusBarHeaderMachine;
+import com.android.systemui.clown.header.StatusBarHeaderMachine;
 import com.android.systemui.shade.LargeScreenHeaderHelper;
 import com.android.systemui.util.LargeScreenUtils;
 

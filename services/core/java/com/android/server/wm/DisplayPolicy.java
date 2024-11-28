@@ -138,7 +138,7 @@ import com.android.internal.protolog.common.ProtoLog;
 import com.android.internal.statusbar.LetterboxDetails;
 import com.android.internal.util.ScreenshotHelper;
 import com.android.internal.util.ScreenshotRequest;
-import com.android.internal.util.crdroid.Utils;
+import com.android.internal.util.clown.Utils;
 import com.android.internal.util.function.TriFunction;
 import com.android.internal.view.AppearanceRegion;
 import com.android.internal.widget.PointerLocationView;

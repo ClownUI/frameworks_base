@@ -56,7 +56,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.android.internal.util.crdroid.Utils;
+import com.android.internal.util.clown.Utils;
 import com.android.systemui.CoreStartable;
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dagger.SysUISingleton;

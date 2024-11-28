@@ -47,7 +47,7 @@ import androidx.annotation.VisibleForTesting;
 
 import com.android.internal.R;
 import com.android.internal.policy.SystemBarUtils;
-import com.android.internal.util.crdroid.Utils;
+import com.android.internal.util.clown.Utils;
 
 import lineageos.providers.LineageSettings;
 
